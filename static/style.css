@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+  --prs-color: #CEC188;
+
+  --prs-icon: url("/static/images/misc_icons/prs.png");
+  --prs-favicon: url("/static/images/misc_icons/prs_favicon.png");
+  --pfl-icon: url("images/league_icons/pfl.png");
+  --pbl-icon: url("images/league_icons/pbl.png");
+  --pbul-icon: url("images/league_icons/pbul.png");
+
+  --discord-icon: url("images/social_icons/discord.png");
+  --youtube-icon: url("images/social_icons/youtube.png");
+  --tiktok-icon: url("images/social_icons/tiktok.png");
+
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  color: #fff;
+}
+
+body, button, a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: var(--prs-color);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1e1e1e;
+  border-bottom: 2px solid #333;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--prs-color);
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.logo-link:hover {
+  background-color: #2a2a2a;
+}
+
+.logo-link:hover .logo-text {
+  color: var(--prs-color);
+}
+
+.logo-icon {
+  background-image: var(--prs-icon);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  height: 32px;
+  width: auto;
+  aspect-ratio: 1 / 1;
+  margin-right: 0.5rem;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-left: 3rem;
+  flex-grow: 1;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  color: inherit;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: relative;
+}
+
+.dropbtn::after {
+  content: "▼";
+  font-size: 0.7rem;
+  transition: transform 0.3s ease;
+}
+
+.dropbtn:hover {
+  background-color: #2a2a2a;
+  color: var(--prs-color);
+}
+
+.dropdown:hover .dropbtn::after {
+  transform: rotate(180deg);
+}
+
+.dropdown-content {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #222;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-content a {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  padding: 0.75rem 1rem 0.75rem 3rem;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+/* Colored text by default */
+.dropdown-content a.pfl {
+  color: var(--pfl-color);
+}
+
+.dropdown-content a.pbl {
+  color: var(--pbl-color);
+}
+
+.dropdown-content a.pbul {
+  color: var(--pbul-color);
+}
+
+/* Hover only changes background */
+.dropdown-content a:hover {
+  background-color: #2a2a2a;
+}
+
+/* League icons */
+.dropdown-content a.pfl::before,
+.dropdown-content a.pbl::before,
+.dropdown-content a.pbul::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  width: 1.2rem;
+  height: 1.2rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.dropdown-content a.pfl::before {
+  background-image: var(--pfl-icon);
+}
+
+.dropdown-content a.pbl::before {
+  background-image: var(--pbl-icon);
+}
+
+.dropdown-content a.pbul::before {
+  background-image: var(--pbul-icon);
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+
+/* Discord Section */
+.discord-invite {
+  text-align: center;
+  padding: 2rem;
+}
+
+.discord-invite h2 {
+  margin-bottom: 1rem;
+  color: var(--prs-color);
+}
+
+
+/* Fade-in Animations */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.fade-in-delayed {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Discord Section */
+.discord-invite {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.discord-invite h2 {
+  margin-bottom: 1rem;
+  color: var(--prs-color);
+  font-size: 2rem;
+}
+
+.discord-card {
+  display: inline-block;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  max-width: 100%;
+}
+
+.discord-card iframe {
+  border: none;
+  width: 100%;
+  height: 500px;
+  max-width: 400px;
+}
+
+
+/* Side-by-side About + Discord */
+.about-discord-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+}
+
+.about-us {
+  flex: 1;
+  max-width: 500px;
+}
+
+.about-us h2 {
+  color: var(--prs-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-us p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.discord-card {
+  flex: 1;
+  max-width: 400px;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.discord-card h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: var(--prs-color);
+}
+
+.discord-card iframe {
+  border: none;
+  width: 100%;
+  height: 500px;
+}
+
+
+.hero-title {
+  color: var(--prs-color);
+}
+
+.hero-subtitle {
+  color: white;
+}
+
+
+.what-we-offer {
+  margin-top: 2rem;
+}
+
+.what-we-offer h3 {
+  font-size: 1.5rem;
+  color: var(--prs-color);
+  margin-bottom: 0.5rem;
+}
+
+.what-we-offer ul {
+  padding-left: 1.2rem;
+  list-style-type: disc;
+  color: #ccc;
+}
+
+.what-we-offer li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+
+/* Socials Icon Styling */
+.dropdown-content a.social-option {
+  padding-left: 2.75rem;
+  position: relative;
+}
+
+.dropdown-content a.social-option.discord::before,
+.dropdown-content a.social-option.youtube::before,
+.dropdown-content a.social-option.tiktok::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  width: 1.2rem;
+  height: 1.2rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.dropdown-content a.social-option.discord::before {
+  background-image: var(--discord-icon);
+}
+
+.dropdown-content a.social-option.youtube::before {
+  background-image: var(--youtube-icon);
+}
+
+.dropdown-content a.social-option.tiktok::before {
+  background-image: var(--tiktok-icon);
+}
+
+
+/* Auth Status */
+.auth-status {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.discord-login-btn, .logout-btn {
+  background-color: #7289da;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.discord-login-btn:hover, .logout-btn:hover {
+  background-color: #5b6eae;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.nav-home-link {
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-home-link:hover {
+  background-color: #2a2a2a;
+  color: var(--prs-color);
+}
+
+
+/* Footer */
+.footer {
+  background-color: #1e1e1e;
+  padding: 1rem;
+  text-align: center;
+  color: #ccc;
+  margin-top: 4rem;
+  border-top: 2px solid #333;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-logo {
+  width: 32px;
+  height: 32px;
+  background-image: var(--prs-icon);
+  background-size: contain;
+  background-repeat: no-repeat;
+}

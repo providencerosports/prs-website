@@ -1,0 +1,590 @@
+{
+    "656863051802476548": {
+        "info": {
+            "league_name": "Providence RoSports",
+            "league_color": "D0C385",
+            "roblox_group_url": "https://www.roblox.com/groups/32825741/Providence-RoSports#!/about",
+            "standard_practice_url": "https://docs.google.com/document/d/1OFmZsXV5-hm-IWsoOeI3oMxMj6bh-DDBwkYkwSbMHpo/edit?usp=sharing",
+            "roblox_verify_bot_id": 426537812993638400,
+            "discord_verify_bot_id": 703886990948565003,
+            "verification_url": "https://blox.link/dashboard/verifications",
+            "support_server_invite": "https://discord.gg/providencerosports"
+        },
+        "socials": {
+            "youtube_url": "https://www.youtube.com/@ProvidenceRoSports/featured",
+            "tiktok_url": "https://www.tiktok.com/@providence.rosports",
+            "instagram_url": ""
+        },
+        "apis": {
+            "bloxlink_api": "32eb3198-8ccf-4626-8403-c91ed6e2c027",
+            "youtube_api": "AIzaSyAVN44LZc26zmy6Le4XwZFnjodOgcwyB1Y"
+        },
+        "roles": {
+            "ineligible_id": 1076677103598186536
+        },
+        "channels": {
+            "joins_id": 1287872993879658606,
+            "glob_announce_channel_id": 1286038980952850503,
+            "info_channel_id": 1204546432712048720,
+            "leagues_channel_id": 1336524275665997837
+        },
+        "message_ids": {
+            "leagues_message_id": 1336749801479475372,
+            "info_message_id": 1364222444755222550
+        },
+        "logs": {
+            "action_logs_id": 1309628713838706780,
+            "member_logs_id": 1287873238373896223,
+            "staff_logs_id": 1287873302706131054,
+            "rank_logs_id": 1346159268906270770,
+            "stats_logs_id": 1342243518558634114,
+            "betting_logs_id": 1358830693437931520,
+            "alt_alerts_id": 1312164469388083440,
+            "streamer_alerts_id": 1283839515068465183,
+            "referee_alerts_id": 1368647024668577862
+        },
+        "tickets": {
+            "tickets_channel_id": 1285601532024328192,
+            "transcripts_channel_id": 1313251102300569701
+        },
+        "apps": {
+            "league_apps_channel_id": 0,
+            "staff_apps_channel_id": 1363282442357571625
+        }
+    },
+    "1068670713529106432": {
+        "info": {
+            "league_name": "PFL",
+            "league_full_name": "Providence Football League",
+            "league_color": "EDC96B",
+            "league_emoji": "<:pfl:1363224055100080401>",
+            "league_invite": "https://discord.gg/pfl",
+            "game_name": "Football Fusion 2",
+            "game_link": "https://www.roblox.com/games/8204899140/Football-Fusion-2",
+            "game_cover": "https://tr.rbxcdn.com/180DAY-4318e112c0ca37c50a31c33f40f3d59f/768/432/Image/Webp/noFilter",
+            "final_game_name": "Providence Bowl",
+            "final_game_roman": true,
+            "game_rules_url": "https://docs.google.com/document/d/1akwwNO_rX2_rIDoYievbgMNFPMEQBjQluT7TDSDk_T8/edit?usp=sharing"
+        },
+        "apis": {
+            "bloxlink_api": "73033e21-a91f-47bc-944a-2292e7ddb268"
+        },
+        "roles": {
+            "fo_id": 1068671021713993788,
+            "gm_id": 1068956272214425620,
+            "hc_id": 1068956310328057956,
+            "candidate_id": 1129137011224223775,
+            "captain_id": 1137952788953960601,
+            "verified_id": 1312105482319822959,
+            "unverified_id": 1291136649773846649,
+            "ineligible_id": 1076677103598186536,
+            "suspended_id": 1069043247923609721,
+            "blacklisted_id": 1136335432288829520,
+            "expelled_id": 1209506053834936400,
+            "media_center_role_id": 1274950207758401619
+        },
+        "benefits": {
+            "booster_id": 1121966995391393905,
+            "donator_id": 1208391427185184810,
+            "donator1_id": 1324788622926413916,
+            "donator2_id": 1324788081269936139,
+            "donator3_id": 1324787506746753105,
+            "colors_channel_id": 1235303483763327006
+        },
+        "awards": [
+            "Champion",
+            "League MVP",
+            "Offensive MVP",
+            "Defensive MVP",
+            "All-Pro"
+        ],
+        "stats": {
+            "stats_title_row": 4,
+            "stats_start_row": 6,
+            "stats_webhooks": false,
+            "season_stats_url": "https://docs.google.com/spreadsheets/d/1utnYhVqwCz1WTXLWgvbOq--THZfAMWbDAPGZtZqApJM/edit?gid=0#gid=0",
+            "season_stats_key": "1utnYhVqwCz1WTXLWgvbOq--THZfAMWbDAPGZtZqApJM",
+            "all_time_stats_url": "https://docs.google.com/spreadsheets/d/1f1DtMzSPgFS-zzyBTnYyEy5IwC9O0QBMMC7UhwXJkd4/edit?gid=0#gid=0",
+            "all_time_stats_key": "1f1DtMzSPgFS-zzyBTnYyEy5IwC9O0QBMMC7UhwXJkd4",
+            "stats1_id": 1196664508656123954,
+            "stats2_id": 1200659082877607987,
+            "stats3_id": 1200659165920632963,
+            "stats4_id": 1200659472671068280
+        },
+        "channels": {
+            "transactions_id": 1068674729197707264,
+            "gametimes_id": 1068675704381775912,
+            "free_agency_id": 1068674780720550060,
+            "streaming_id": 1131253748317044880,
+            "featured_streaming_id": 1326084639713923163,
+            "videos_id": 1132668906612477982,
+            "pickups_id": 1326255561922314240,
+            "captains_id": 1301896166665097226,
+            "decisions_id": 1136349740389372006,
+            "ownership_id": 1353747594064695357,
+            "joins_id": 1068673970464895038,
+            "announce_channel_id": 1068673788750860319,
+            "glob_announce_channel_id": 1249798280611889206,
+            "schedule_channel_id": 1068675634122989578,
+            "promotions_channel_id": 1135605111410933922,
+            "swaps_id": 1246521163606265989,
+            "vc_category_id": 1078123044213620797,
+            "info_channel_id": 1068673776235065427,
+            "verification_channel_id": 1135326539358162996,
+            "standings_channel_id": 1292487820396466297,
+            "bidding_channel_id": 1246521163606265989
+        },
+        "message_ids": {
+            "colors_message_id": 1337229461635989536,
+            "leaderboard_message_id": 1336729595378012252,
+            "groups_message_id": 1336729596682305606,
+            "bidding_message_id": 1342200722707447932,
+            "info_message_id": 1293651937627078700,
+            "schedule_message_id": 1370392070941970453
+        },
+        "media": {
+            "twitter_id": 1209201092135493763,
+            "media_category_id": 1068675396347908167,
+            "max_media_num": 5,
+            "max_media_cohosts": 3
+        },
+        "tickets": {
+            "tickets_channel_id": 1283220435026055239,
+            "transcripts_channel_id": 1313250800834969691
+        },
+        "apps": {
+            "league_apps_channel_id": 1148993540517527713,
+            "staff_apps_channel_id": 1337467088583004261
+        },
+        "settings": {
+            "regular_deadline_days": 6,
+            "playoff_deadline_days": 2,
+            "auto_gametimes": false,
+            "auto_gametimes_range": [
+                20,
+                22
+            ],
+            "roster_cap": 24,
+            "min_roster_cap": 8,
+            "min_roster_24h": 4,
+            "min_roster_48h": 8,
+            "total_divisions": 3,
+            "teams_per_division": 12,
+            "groups_per_division": 3,
+            "teams_per_group": 4,
+            "primetime_min": 3,
+            "playoff_teams": 16,
+            "ffw_pd": 14,
+            "d1_points": 6,
+            "d2_points": 4,
+            "d3_points": 2,
+            "d1_stay": 6,
+            "d1_demote": 6,
+            "d2_promote": 6,
+            "d2_stay": 0,
+            "d2_demote": 6,
+            "d3_promote": 6,
+            "d3_stay": 6
+        }
+    },
+    "1318677095798411294": {
+        "info": {
+            "league_name": "PUFL",
+            "league_full_name": "Providence Universe Football League",
+            "league_color": "0080FF",
+            "league_emoji": "<:pufl:1318686636078534797>",
+            "league_invite": "https://discord.gg/gD7WQ6KPhv",
+            "game_name": "NFL Universe Football",
+            "game_link": "https://www.roblox.com/games/2338325648/SUPER-BOWL-NFL-Universe-Football",
+            "game_cover": "https://tr.rbxcdn.com/180DAY-ff593dcf6b6f76c545f56115c2c16ae9/768/432/Image/Webp/noFilter",
+            "final_game_name": "Providence Bowl",
+            "final_game_roman": true,
+            "game_rules_url": "https://docs.google.com/document/d/1RMtqu1XFEMMQl1WmgJOYyl00BRhSHRFBfb-ma_jAeQs/edit?tab=t.0"
+        },
+        "apis": {
+            "bloxlink_api": "0e24efd0-62e9-4df7-9a59-7aae86caa606"
+        },
+        "roles": {
+            "fo_id": 1318677095982960664,
+            "gm_id": 1318677095982960663,
+            "hc_id": 1318677095982960662,
+            "candidate_id": 1318677095798411302,
+            "captain_id": 1318677095810859039,
+            "verified_id": 1318677095798411299,
+            "unverified_id": 1318677095798411298,
+            "ineligible_id": 1318677095798411300,
+            "suspended_id": 1318677095810859038,
+            "blacklisted_id": 1318677095798411303,
+            "expelled_id": 1318677096037355606,
+            "media_center_role_id": 1318677095810859040
+        },
+        "benefits": {
+            "booster_id": 1329973750413918248,
+            "donator_id": 1318681706198335551,
+            "donator1_id": 1318681708471517185,
+            "donator2_id": 1318682536926511184,
+            "donator3_id": 1318684437277315073,
+            "colors_channel_id": 1318677097203630093
+        },
+        "awards": [
+            "Champion",
+            "League MVP",
+            "Offensive MVP",
+            "Defensive MVP",
+            "All-Pro"
+        ],
+        "stats": {
+            "stats_title_row": 4,
+            "stats_start_row": 6,
+            "stats_webhooks": true,
+            "season_stats_url": "https://docs.google.com/spreadsheets/d/1y5rbE8s5Ie6ov9ISM-ovl34CfsK4W9LhaoRL6SIbuPw/edit?gid=0#gid=0",
+            "season_stats_key": "1y5rbE8s5Ie6ov9ISM-ovl34CfsK4W9LhaoRL6SIbuPw",
+            "all_time_stats_url": "https://docs.google.com/spreadsheets/d/1A3fOVQKyozr0YfxNS66bi2jRIDgzcbFvNOnm3EugVuo/edit?gid=0#gid=0",
+            "all_time_stats_key": "1A3fOVQKyozr0YfxNS66bi2jRIDgzcbFvNOnm3EugVuo",
+            "stats1_id": 1318677097358692476,
+            "stats2_id": 1318677097358692477,
+            "stats3_id": 1318677097358692478,
+            "stats4_id": 1318677097358692479
+        },
+        "channels": {
+            "transactions_id": 1318677097358692474,
+            "gametimes_id": 1318677097358692473,
+            "free_agency_id": 1318677097203630098,
+            "streaming_id": 1318677097203630094,
+            "featured_streaming_id": 1326084887547084821,
+            "pickups_id": 1326080899170697257,
+            "captains_id": 1318677097203630091,
+            "decisions_id": 1318677097203630099,
+            "ownership_id": 1353747417048158328,
+            "joins_id": 1318677096666628165,
+            "announce_channel_id": 1318679156539789446,
+            "glob_announce_channel_id": 1318679756857933967,
+            "schedule_channel_id": 1318684640747196457,
+            "promotions_channel_id": 1318677096666628162,
+            "vc_category_id": 1318677097358692480,
+            "info_channel_id": 1318677096666628164,
+            "verification_channel_id": 1318677096666628159,
+            "standings_channel_id": 1318677096666628161,
+            "bidding_channel_id": 1318677096872153106
+        },
+        "message_ids": {
+            "info_message_id": 1329605273945641010,
+            "leaderboard_message_id": 1336729865801437245,
+            "groups_message_id": 1336729867609440346,
+            "bidding_message_id": 1342200753279864873,
+            "colors_message_id": 1337229471153131583,
+            "schedule_message_id": 0
+        },
+        "media": {
+            "twitter_id": 1318677097073610764,
+            "media_category_id": 1318677096872153107,
+            "max_media_num": 5,
+            "max_media_cohosts": 3
+        },
+        "tickets": {
+            "tickets_channel_id": 1328600156664369225,
+            "transcripts_channel_id": 1328600135218892883
+        },
+        "apps": {
+            "league_apps_channel_id": 1318677096872153098,
+            "staff_apps_channel_id": 1337467116777111605
+        },
+        "settings": {
+            "regular_deadline_days": 6,
+            "playoff_deadline_days": 2,
+            "auto_gametimes": false,
+            "auto_gametimes_range": [
+                20,
+                22
+            ],
+            "roster_cap": 24,
+            "min_roster_cap": 8,
+            "min_roster_24h": 4,
+            "min_roster_48h": 8,
+            "total_divisions": 2,
+            "teams_per_division": 4,
+            "groups_per_division": 1,
+            "teams_per_group": 4,
+            "primetime_min": 1,
+            "playoff_teams": 4,
+            "ffw_pd": 14,
+            "d1_points": 6,
+            "d2_points": 4,
+            "d3_points": 2,
+            "d1_stay": 2,
+            "d1_demote": 2,
+            "d2_promote": 2,
+            "d2_stay": 0,
+            "d2_demote": 2,
+            "d3_promote": 2,
+            "d3_stay": 2
+        }
+    },
+    "1240014143784747018": {
+        "info": {
+            "league_name": "PBL",
+            "league_full_name": "Providence Basketball League",
+            "league_color": "ee652f",
+            "league_emoji": "<:pbl:1363223711527731411>",
+            "league_invite": "https://discord.gg/Ja3XNfDTAw",
+            "game_name": "Basketball Legends",
+            "game_link": "https://www.roblox.com/games/14259168147/2X-Basketball-Legends",
+            "game_cover": "https://tr.rbxcdn.com/180DAY-6d3f2c90258162afd5bbbe7b49d34b78/768/432/Image/Webp/noFilter",
+            "final_game_name": "Finals",
+            "final_game_roman": false,
+            "server_shop_url": "https://discord.com/channels/1240014143784747018/shop",
+            "game_rules_url": "https://docs.google.com/document/d/1rh4B2ng1UroZSYknU2BrWj0WAdKfyOsDYFfGdF43WAk/edit?tab=t.0"
+        },
+        "apis": {
+            "bloxlink_api": "df9a8e14-926a-4040-80bf-0e0c49523034"
+        },
+        "roles": {
+            "fo_id": 1345822865026715778,
+            "gm_id": 1345822866242797598,
+            "hc_id": 1345822867358617704,
+            "candidate_id": 1345822921955868733,
+            "captain_id": 1345822917484875901,
+            "verified_id": 1345822926275874916,
+            "unverified_id": 1345822927656058901,
+            "ineligible_id": 1345822925110116424,
+            "suspended_id": 1345822918784974869,
+            "blacklisted_id": 1345822920429273172,
+            "expelled_id": 1345822825835139104,
+            "media_center_role_id": 1345822923826659348
+        },
+        "benefits": {
+            "booster_id": 1240323856028405852,
+            "donator_id": 1346862556236742728,
+            "donator1_id": 1346868801303478334,
+            "donator2_id": 1346868083590959124,
+            "donator3_id": 1346863145402105917,
+            "colors_channel_id": 1345823080571863070
+        },
+        "awards": [
+            "Champion",
+            "League MVP",
+            "Offensive MVP",
+            "Defensive MVP",
+            "All-Pro"
+        ],
+        "stats": {
+            "stats_title_row": 4,
+            "stats_start_row": 6,
+            "stats_webhooks": false,
+            "season_stats_url": "https://docs.google.com/spreadsheets/d/1luwyVTkvkpw0SQOgARQwkJyM9Ezf6osonGNXRNF8Fic/edit?gid=0#gid=0",
+            "season_stats_key": "1luwyVTkvkpw0SQOgARQwkJyM9Ezf6osonGNXRNF8Fic",
+            "all_time_stats_url": "https://docs.google.com/spreadsheets/d/1QXjv11W_zFsRPVj5uUlOJuksDss9VNTEuVvE2IVC8Go/edit?gid=0#gid=0",
+            "all_time_stats_key": "1QXjv11W_zFsRPVj5uUlOJuksDss9VNTEuVvE2IVC8Go",
+            "stats1_id": 1345823096040460290,
+            "stats2_id": 1345823098645254256,
+            "stats3_id": 1345823100398473236,
+            "stats4_id": 1345823101916680324
+        },
+        "channels": {
+            "transactions_id": 1345823094576644279,
+            "gametimes_id": 1345823092621967380,
+            "free_agency_id": 1345823089828823100,
+            "streaming_id": 1345823084879286413,
+            "featured_streaming_id": 1345823083264737311,
+            "pickups_id": 1345823076520296458,
+            "captains_id": 1345823077946097747,
+            "decisions_id": 1345823091011620986,
+            "ownership_id": 1345823086930559037,
+            "joins_id": 1345823054047088740,
+            "announce_channel_id": 1345823033897779345,
+            "glob_announce_channel_id": 1345823031418683554,
+            "schedule_channel_id": 1345823043733291038,
+            "promotions_channel_id": 1345823051069128806,
+            "vc_category_id": 1345823022224904355,
+            "info_channel_id": 1240014144413892767,
+            "verification_channel_id": 1345823011667705947,
+            "standings_channel_id": 1345823045545230440,
+            "bidding_channel_id": 1345823081972629514
+        },
+        "message_ids": {
+            "info_message_id": 1347632791566811208,
+            "leaderboard_message_id": 1347632789352218697,
+            "groups_message_id": 1347632790509981810,
+            "bidding_message_id": 1347632793013850233,
+            "colors_message_id": 1347632792313266277,
+            "schedule_message_id": 1369667074649227295
+        },
+        "media": {
+            "twitter_id": 1345823073894400091,
+            "media_category_id": 1345823016801534002,
+            "max_media_num": 5,
+            "max_media_cohosts": 3
+        },
+        "tickets": {
+            "tickets_channel_id": 1347568574906241036,
+            "transcripts_channel_id": 1347568531360976989
+        },
+        "apps": {
+            "league_apps_channel_id": 1345823056022736928,
+            "staff_apps_channel_id": 1347568467464949934
+        },
+        "settings": {
+            "regular_deadline_days": 6,
+            "playoff_deadline_days": 3,
+            "auto_gametimes": true,
+            "auto_gametimes_range": [
+                20,
+                22
+            ],
+            "roster_cap": 12,
+            "min_roster_cap": 4,
+            "min_roster_24h": 2,
+            "min_roster_48h": 4,
+            "total_divisions": 1,
+            "teams_per_division": 8,
+            "groups_per_division": 2,
+            "teams_per_group": 4,
+            "primetime_min": 2,
+            "playoff_teams": 4,
+            "ffw_pd": 20,
+            "d1_points": 6,
+            "d2_points": 4,
+            "d3_points": 2,
+            "d1_stay": 12,
+            "d1_demote": 0,
+            "d2_promote": 0,
+            "d2_stay": 0,
+            "d2_demote": 0,
+            "d3_promote": 0,
+            "d3_stay": 0
+        }
+    },
+    "1364650269652025354": {
+        "info": {
+            "league_name": "PBUL",
+            "league_full_name": "Providence Baseball Universe League",
+            "league_color": "0094d1",
+            "league_emoji": "<:pbul:1364657947594068018>",
+            "league_invite": "https://discord.gg/pbul",
+            "game_name": "Baseball Universe",
+            "game_link": "https://www.roblox.com/games/132756651286184/Baseball-Universe-9v9",
+            "game_cover": "https://tr.rbxcdn.com/180DAY-8ea88070dff9301ef3712f1b43ea76bc/768/432/Image/Webp/noFilter",
+            "final_game_name": "Providence World Series",
+            "final_game_roman": true,
+            "game_rules_url": "https://docs.google.com/document/d/1MEhpoemFGHGq36Ml0zIgtpwYfPn90j3JxMwok9KYSWI/edit?tab=t.0"
+        },
+        "apis": {
+            "bloxlink_api": "8384eabb-0d88-4503-8b64-020c3912b5f7"
+        },
+        "roles": {
+            "fo_id": 1364650269815603322,
+            "gm_id": 1364650269815603321,
+            "hc_id": 1364650269803024445,
+            "candidate_id": 1364650269652025360,
+            "captain_id": 1364650269652025363,
+            "verified_id": 1364650269652025357,
+            "unverified_id": 1364650269652025356,
+            "ineligible_id": 1364650269652025358,
+            "suspended_id": 1364650269652025362,
+            "blacklisted_id": 1364650269652025361,
+            "expelled_id": 1364650269862006826,
+            "media_center_role_id": 1364650269652025359
+        },
+        "benefits": {
+            "booster_id": 1365338972565274644,
+            "donator_id": 1365345542476927038,
+            "donator1_id": 1365345544540655749,
+            "donator2_id": 1365345756978090105,
+            "donator3_id": 1365345927958888498,
+            "colors_channel_id": 1364650271325814880
+        },
+        "awards": [
+            "Champion",
+            "League MVP",
+            "Batting MVP",
+            "Pitching MVP",
+            "All-Pro"
+        ],
+        "stats": {
+            "stats_title_row": 4,
+            "stats_start_row": 6,
+            "stats_webhooks": false,
+            "season_stats_url": "https://docs.google.com/spreadsheets/d/1XpTVgdR5h3y76QT8dRIFg8tDCWkigcCf3RIzlPG2iu8/edit?gid=0#gid=0",
+            "season_stats_key": "1XpTVgdR5h3y76QT8dRIFg8tDCWkigcCf3RIzlPG2iu8",
+            "all_time_stats_url": "https://docs.google.com/spreadsheets/d/1uuq3D5AZba5NbFPfsrwdknOhLaBSjxVCUR_qRyJ3Yhw/edit?gid=0#gid=0",
+            "all_time_stats_key": "1uuq3D5AZba5NbFPfsrwdknOhLaBSjxVCUR_qRyJ3Yhw",
+            "stats1_id": 1364650271568826485,
+            "stats2_id": 1364650271568826486,
+            "stats3_id": 1364650271568826487,
+            "stats4_id": 1364650271568826488
+        },
+        "channels": {
+            "transactions_id": 1364650271568826483,
+            "gametimes_id": 1364650271568826482,
+            "free_agency_id": 1364650271568826480,
+            "streaming_id": 1364650271325814882,
+            "featured_streaming_id": 1364650270692348107,
+            "pickups_id": 1364650271325814877,
+            "captains_id": 1364650271325814878,
+            "decisions_id": 1364650271568826481,
+            "ownership_id": 1364650271325814884,
+            "joins_id": 1364650270692348111,
+            "announce_channel_id": 1364650270277107748,
+            "glob_announce_channel_id": 1364650270277107747,
+            "schedule_channel_id": 1364650270277107749,
+            "promotions_channel_id": 1364650270692348108,
+            "vc_category_id": 1364650271568826489,
+            "info_channel_id": 1364650270692348110,
+            "verification_channel_id": 1364650270277107743,
+            "standings_channel_id": 1364650270277107751,
+            "bidding_channel_id": 1364650271325814881
+        },
+        "message_ids": {
+            "leaderboard_message_id": 1365346557875982407,
+            "groups_message_id": 1365346559474012321,
+            "bidding_message_id": 1365346565090447380,
+            "colors_message_id": 1365346563450343619,
+            "info_message_id": 1365346560883560458,
+            "schedule_message_id": 1368983986994544681
+        },
+        "media": {
+            "twitter_id": 1364650270998663173,
+            "media_category_id": 1364650270998663171,
+            "max_media_num": 5,
+            "max_media_cohosts": 3
+        },
+        "tickets": {
+            "tickets_channel_id": 1365342811641217225,
+            "transcripts_channel_id": 1365342793236611173
+        },
+        "apps": {
+            "league_apps_channel_id": 1364650270692348112,
+            "staff_apps_channel_id": 1365342768800727170
+        },
+        "settings": {
+            "regular_deadline_days": 7,
+            "playoff_deadline_days": 3,
+            "auto_gametimes": true,
+            "auto_gametimes_range": [
+                20,
+                22
+            ],
+            "roster_cap": 27,
+            "min_roster_cap": 9,
+            "min_roster_24h": 5,
+            "min_roster_48h": 9,
+            "total_divisions": 1,
+            "teams_per_division": 6,
+            "groups_per_division": 1,
+            "teams_per_group": 6,
+            "primetime_min": 1,
+            "playoff_teams": 4,
+            "ffw_pd": 7,
+            "d1_points": 6,
+            "d2_points": 4,
+            "d3_points": 2,
+            "d1_stay": 4,
+            "d1_demote": 0,
+            "d2_promote": 0,
+            "d2_stay": 0,
+            "d2_demote": 0,
+            "d3_promote": 0,
+            "d3_stay": 0
+        }
+    }
+}
