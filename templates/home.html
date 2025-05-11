@@ -26,6 +26,56 @@
     background-color: rgba(0, 0, 0, 0.9);
     z-index: -1;
   }
+
+  .about-discord-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .left-column {
+    flex: 1 1 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .right-column {
+    flex: 1 1 35%;
+    min-width: 300px;
+  }
+
+  .widget-box {
+    background-color: #1E1E1E;
+    border-radius: 12px;
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+
+  .section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  @media (max-width: 900px) {
+    .about-discord-section {
+      flex-direction: column;
+    }
+
+    .left-column, .right-column {
+      flex: 1 1 100%;
+    }
+  }
+
+
+  .widget-box ul {
+    padding-left: 1.75rem;
+  }
+
 </style>
 
 <main class="hero-section fade-in">
@@ -33,18 +83,22 @@
   <p class="hero-subtitle">Start your Roblox sporting career here</p>
 </main>
 
+<div class="section-container">
 <section class="about-discord-section fade-in-delayed">
-  <div class="about-us">
-    <h2>About Us</h2>
-    <p>
-      Providence RoSports is a premier destination for competitive Roblox sports leagues.
-      We operate multiple leagues and foster a community centered on fair play, entertainment,
-      and growth for players of all skill levels. Whether you're here to compete or spectate,
-      welcome to the most dynamic & organized sports experience on the platform.
-    </p>
+  
+  <div class="left-column">
+    <div class="widget-box">
+      <h2>About Us</h2>
+      <p>
+        Providence RoSports is a premier destination for competitive Roblox sports leagues.
+        We operate multiple leagues and foster a community centered on fair play, entertainment,
+        and growth for players of all skill levels. Whether you're here to compete or spectate,
+        welcome to the most dynamic & organized sports experience on the platform.
+      </p>
+    </div>
 
-    <div class="what-we-offer">
-      <h3>What Our Leagues Have</h3>
+    <div class="widget-box">
+      <h2>What Our Leagues Have</h2>
       <ul>
         <li>Competition</li>
         <li>Organization</li>
@@ -55,7 +109,9 @@
       </ul>
     </div>
   </div>
-  <div style="border: 3px solid #{{ settings.info.league_color }}; border-radius: 10px; padding: 0.5rem;">
+    
+  <div class="right-column">
+<div class="widget-box">
   <iframe 
     src="https://discord.com/widget?id=656863051802476548&theme=dark" 
     allowtransparency="true" 
@@ -64,5 +120,7 @@
     sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
   </iframe>
   </div>
+</div>
 </section>
+</div>
 {% endblock %}

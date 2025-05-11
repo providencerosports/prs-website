@@ -1,0 +1,49 @@
+
+{% extends "base.html" %}
+{% block title %}My Profile - Providence RoSports{% endblock %}
+
+{% block content %}
+<div class="profile-container" style="display: flex; justify-content: center; padding: 40px;">
+  {% if user %}
+  <div class="profile-panel" style="background-color: #1e1e2f; border-radius: 16px; padding: 30px 40px; box-shadow: 0 0 15px rgba(0,0,0,0.3); max-width: 600px; width: 100%; color: #f0f0f0;">
+    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+      <img src="{{ user.avatar_url }}" alt="User Avatar" style="width: 64px; height: 64px; border-radius: 50%;">
+      <div>
+        <h2 style="margin: 0;">{{ user.username }}</h2>
+        <p style="margin: 2px 0; color: #aaa;"><strong>Discord ID:</strong> {{ user.id }}</p>
+      </div>
+    </div>
+
+    {% set user_row = user_data %}
+
+    {% if user_row %}
+    <hr style="border-color: #333;">
+    <div style="margin-top: 20px;">
+      <p>
+        <strong>Roblox Username:</strong> 
+        {{ user_row.recent_user }} 
+        {% if user_row['recent_user_time'] %}
+        <span style="color: #888;">
+          (Verified on {{ user_row["recent_user_time"] | int | datetimeformat }})
+        </span>
+        {% endif %}
+      </p>
+
+      <div style="margin-top: 10px;">
+        <strong>Past Roblox Accounts:</strong>
+        <ul style="padding-left: 20px; margin-top: 5px;">
+          {% for past_user in user_row.past_users %}
+          <li>{{ past_user }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    {% else %}
+    <p style="margin-top: 20px;">User data not found in the database.</p>
+    {% endif %}
+  </div>
+  {% else %}
+  <p>You must be logged in to view your profile.</p>
+  {% endif %}
+</div>
+{% endblock %}

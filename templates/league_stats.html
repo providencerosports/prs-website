@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ league_name }} {{ title }} - Providence RoSports</div>
+{% endblock %}
+
+{% block content %}
+<div class="stats-color-scope" style="color: {{ league_color }}">
+<div class="stats-widget">
+    <h1 class="stats-heading" style="color: {{ league_color }}">{{ league_name }} {{ title }}</h1>
+
+    <div class="category-tabs">
+        {% for category in categories %}
+<style>.tab-button { color: {{ league_color }} !important; }</style>
+            <button class="category-tab {% if category == selected_category %}active{% endif %}" style="color: {{ league_color }}; border-color: {{ league_color }};"
+                    onclick="changeCategory('{{ category }}')">
+                {{ category }}
+            </button>
+        {% endfor %}
+    </div>
+
+    <div class="stats-table-wrapper">
+        <table class="stats-table">
+            <thead>
+                <tr>
+                    {% for stat in stat_headers %}
+                        <th class="sortable {% if stat.stat_name == sort_by %}active{% endif %}" data-stat="{{ stat.stat_name }}">
+    <span class="th-label">
+        {{ stat.stat_name.replace('_', ' ').title() if stat.stat_name.lower() in ['username', 'rank'] else stat.stat_name.replace('_', ' ') }}
+        {% if stat.stat_name == sort_by %}
+            <span class="sort-arrow">{% if direction == 'asc' %}▲{% else %}▼{% endif %}</span>
+        {% endif %}
+    </span>
+</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody id="stats-body">
+                {% for user in stats_data %}
+                    <tr>
+                        {% for value in user.stats %}
+                            <td class="{% if loop.index0 == sort_column_index %}highlight-column{% endif %}">{{ value }}</td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.sortable').forEach(header => {
+        header.addEventListener('click', () => {
+            const stat = header.dataset.stat;
+            const url = new URL(window.location.href);
+            const currentSort = url.searchParams.get('sort');
+            const currentDir = url.searchParams.get('dir') || 'desc';
+
+            let newDir = 'desc';
+            if (currentSort === stat) {
+                newDir = currentDir === 'desc' ? 'asc' : 'desc';
+            }
+
+            url.searchParams.set('sort', stat);
+            url.searchParams.set('dir', newDir);
+            window.location.href = url.toString();
+        });
+    });
+
+    function changeCategory(category) {
+        const url = new URL(window.location.href);
+        url.searchParams.set('category', category);
+        url.searchParams.delete('sort');
+        url.searchParams.delete('dir');
+        window.location.href = url.toString();
+    }
+</script>
+</div>
+{% endblock %}

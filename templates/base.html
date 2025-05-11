@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,9 +21,9 @@
       <div class="dropdown">
         <button class="dropbtn">Leagues</button>
         <div class="dropdown-content">
-          <a href="/pfl" class="dropdown-item league-option pfl">PFL</a>
-          <a href="/pbl" class="dropdown-item league-option pbl">PBL</a>
-          <a href="/pbul" class="dropdown-item league-option pbul">PBUL</a>
+          <a href="/pfl" class="dropdown-item league-option pfl" style="color: #EDC96B;">PFL</a>
+          <a href="/pbl" class="dropdown-item league-option pbl" style="color: #ee652f;">PBL</a>
+          <a href="/pbul" class="dropdown-item league-option pbul" style="color: #0094d1;">PBUL</a>
         </div>
       </div>
 
@@ -30,6 +31,7 @@
         <button class="dropbtn">Socials</button>
         <div class="dropdown-content">
           <a href="https://discord.gg/providencerosports" target="_blank" class="social-option discord">Discord</a>
+          <a href="https://www.roblox.com/groups/32825741/Providence-RoSports#!/about" target="_blank" class="social-option roblox">Roblox</a>
           <a href="https://www.youtube.com/channel/UCaleDoEtBrNhe5m6gMqvJLw" target="_blank" class="social-option youtube">YouTube</a>
           <a href="https://www.tiktok.com/@providence.rosports" target="_blank" class="social-option tiktok">TikTok</a>
         </div>
@@ -38,10 +40,21 @@
 
     <div class="auth-status">
       {% if user %}
-      <div class="user-info">
-        <img src="{{ user['avatar_url'] }}" alt="User Avatar" class="user-avatar" />
-        <span class="user-name">{{ user['username'] }}</span>
-        <a href="/logout" class="logout-btn">Logout</a>
+      <div class="dropdown user-dropdown">
+        <button class="dropbtn user-dropbtn">
+          <img src="{{ user['avatar_url'] }}" alt="User Avatar" class="user-avatar" />
+          <span class="user-name">{{ user['username'] }}</span>
+        </button>
+        <div class="dropdown-content user-dropdown-content">
+          <a href="/profile" class="dropdown-item prs_color" style="padding-left: 1.25rem;">
+            <img src="{{ url_for('static', filename='images/misc_icons/my_profile.png') }}" alt="Profile Icon" style="height: 1em; width: auto; margin-right: 0.4em; vertical-align: middle; display: inline-block;">
+            My Profile
+          </a>
+          <a href="/logout" class="dropdown-item text-red" style="color: red; padding-left: 1.25rem;">
+            <img src="{{ url_for('static', filename='images/misc_icons/log_out.png') }}" alt="Logout Icon" style="height: 1em; width: auto; margin-right: 0.4em; vertical-align: middle; display: inline-block;">
+            Log out
+          </a>
+        </div>
       </div>
       {% else %}
       <a href="/login" class="discord-login-btn">Sign in with Discord</a>

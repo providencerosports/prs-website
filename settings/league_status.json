@@ -1,0 +1,54 @@
+{
+    "1068670713529106432": {
+        "season": 18,
+        "series": 5,
+        "season_started": true,
+        "series_started": true,
+        "bidding": false,
+        "bidding_end": 1743911940,
+        "deadline_start": 1746797325,
+        "deadline_end": 1747022340,
+        "playoffs": true,
+        "playoffs_round": 2,
+        "playoffs_signing_deadline": 1715121540
+    },
+    "1318677095798411294": {
+        "season": 2,
+        "series": 5,
+        "season_started": true,
+        "series_started": true,
+        "bidding": false,
+        "bidding_end": 1741496340,
+        "deadline_start": 1744371463,
+        "deadline_end": 1744603140,
+        "playoffs": true,
+        "playoffs_round": 2,
+        "playoffs_signing_deadline": 1715121540
+    },
+    "1240014143784747018": {
+        "season": 2,
+        "series": 3,
+        "season_started": true,
+        "series_started": true,
+        "bidding": false,
+        "bidding_end": 1745380740,
+        "deadline_start": 1746624415,
+        "deadline_end": 1747195140,
+        "playoffs": false,
+        "playoffs_round": 0,
+        "playoffs_signing_deadline": 1715121540
+    },
+    "1364650269652025354": {
+        "season": 1,
+        "series": 1,
+        "season_started": true,
+        "series_started": false,
+        "bidding": false,
+        "bidding_end": null,
+        "deadline_start": 1746461578,
+        "deadline_end": 1747108740,
+        "playoffs": false,
+        "playoffs_round": 0,
+        "playoffs_signing_deadline": 1715121540
+    }
+}
