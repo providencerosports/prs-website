@@ -1,3 +1,1 @@
-git add .
-git commit -m "Updating for god knows why"
 git push origin main

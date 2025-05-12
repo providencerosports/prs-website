@@ -24,6 +24,23 @@
     color: #fff;
   }
 
+  .league-tool-link {
+    background-color: #{{ settings.info.league_color }};
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.6rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+
+  .league-tool-link:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
+
   .widget-box {
     background-color: #1E1E1E;
     border-radius: 12px;
@@ -55,6 +72,9 @@
   }
 
 </style>
+
+
+
 
 <style>
   body::before {
@@ -113,6 +133,9 @@
 
 </style>
 
+
+
+
 <main class="hero-section fade-in">
   <h1 class="hero-title" style="color: #{{ settings.info.league_color }};">{{ settings.info.league_full_name }}</h1>
   <p class="hero-subtitle">
@@ -135,6 +158,19 @@
 <div class="section-container">
   <div class="about-discord-wrapper">
     <div class="left-about">
+
+
+<div class="widget-box">
+  <h2 style="color: #{{ settings.info.league_color }};">League Tools</h2>
+  <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 0.75rem;">
+    <a href="/{{ settings.info.league_name | lower }}/stats/season" class="league-tool-link">Player Statistics</a>
+  </div>
+</div>
+
+
+      
+      
+
       <div class="widget-box">
     <h2 style="color: #{{ settings.info.league_color }};">What is {{ settings.info.league_name }}?</h2>
     <p>

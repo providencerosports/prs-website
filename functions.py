@@ -62,9 +62,11 @@ def render_league_stats(guild_id: str, section: str, title: str):
         main_db_cursor = main_db_conn.cursor()
 
         main_db_cursor.execute("""
-            SELECT DISTINCT stat_category
+            SELECT stat_category
             FROM stats_database
             WHERE guild_id = ? AND section = ?
+            GROUP BY stat_category
+            ORDER BY MIN(category_order_index) ASC
         """, (guild_id, section))
         categories = [row[0] for row in main_db_cursor.fetchall()]
         if not categories:
@@ -133,10 +135,7 @@ def render_league_stats(guild_id: str, section: str, title: str):
                 stats_data.sort(key=lambda x: parse(x["stats"][idx]), reverse=(direction == "desc"))
 
         sort_column_index = idx
-
         settings = load_settings_json("guild_settings").get(guild_id)
-        league_name = settings["info"]["league_name"]
-        league_color = f"#{settings['info']['league_color'].lstrip('#')}"
 
         main_db_conn.close()
 
@@ -145,12 +144,12 @@ def render_league_stats(guild_id: str, section: str, title: str):
         categories=categories,
         selected_category=selected_category,
         stat_headers=stat_headers,
-        stats_data=stats_data,
+        stats_data=stats_data[:250],
         user=session.get("user"),
         sort_by=sort_by,
         direction=direction,
         sort_column_index=sort_column_index,
         title=title,
-        league_name=league_name,
-        league_color=league_color
+        section=section,
+        settings=settings
     )

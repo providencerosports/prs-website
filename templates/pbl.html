@@ -3,6 +3,23 @@
 {% block content %}
 
 <style>
+  .league-tool-link {
+    background-color: #{{ settings.info.league_color }};
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.6rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.4s ease, color 0.4s ease;
+    display: block;
+  }
+
+  .league-tool-link:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
   .widget-box p {
     color: #{{ settings.info.league_color }};
   }
@@ -135,6 +152,17 @@
 <div class="section-container">
   <div class="about-discord-wrapper">
     <div class="left-about">
+
+<div class="widget-box">
+  <h2 style="color: #{{ settings.info.league_color }};">League Tools</h2>
+<div style="height: 0.75rem;"></div>
+  <ul style="list-style: none; padding-left: 0; margin: 0;">
+    <li style="margin-bottom: 0.75rem;">
+      <a href="/{{ settings.info.league_name | lower }}/stats/season" class="league-tool-link">Player Statistics</a>
+    </li>
+  </ul>
+</div>
+
       <div class="widget-box">
     <h2 style="color: #{{ settings.info.league_color }};">What is {{ settings.info.league_name }}?</h2>
     <p>

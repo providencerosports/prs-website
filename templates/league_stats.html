@@ -1,17 +1,74 @@
 {% extends 'base.html' %}
 
-{% block title %}{{ league_name }} {{ title }} - Providence RoSports</div>
+{% block title %}{{ settings.info.league_name }} {{ title }} - Providence RoSports</div>
+{% endblock %}
+
+
+{% block head %}
+<style>
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('{{ settings.info.game_cover }}');
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.90);
+    z-index: -1;
+  }
+</style>
 {% endblock %}
 
 {% block content %}
-<div class="stats-color-scope" style="color: {{ league_color }}">
+<div class="stats-color-scope" style="color: #{{ settings.info.league_color }}">
 <div class="stats-widget">
-    <h1 class="stats-heading" style="color: {{ league_color }}">{{ league_name }} {{ title }}</h1>
+    <h1 class="stats-heading" style="color: #{{ settings.info.league_color }}">{{ settings.info.league_name }} {{ title }}</h1>
 
-    <div class="category-tabs">
+    
+    
+<div class="category-tabs" style="margin-bottom: 1rem;">
+    <button class="category-tab {% if section == 'season' %}active{% endif %}"
+            style="color: #{{ settings.info.league_color }}; border-color: #{{ settings.info.league_color }};"
+            onclick="switchSection('season')">
+        Season
+    </button>
+    <button class="category-tab {% if section == 'all_time' %}active{% endif %}"
+            style="color: #{{ settings.info.league_color }}; border-color: #{{ settings.info.league_color }};"
+            onclick="switchSection('all_time')">
+        All-Time
+    </button>
+</div>
+
+<script>
+function switchSection(section) {
+    const url = new URL(window.location.href);
+    const parts = url.pathname.split('/');
+    if (parts.length >= 4) {
+        parts[3] = section;
+        url.pathname = parts.join('/');
+        window.location.href = url.toString();
+    }
+}
+</script>
+
+
+<div class="category-tabs">
         {% for category in categories %}
-<style>.tab-button { color: {{ league_color }} !important; }</style>
-            <button class="category-tab {% if category == selected_category %}active{% endif %}" style="color: {{ league_color }}; border-color: {{ league_color }};"
+<style>.tab-button { color: #{{ settings.info.league_color }} !important; }</style>
+            <button class="category-tab {% if category == selected_category %}active{% endif %}" style="color: #{{ settings.info.league_color }}; border-color: #{{ settings.info.league_color }};"
                     onclick="changeCategory('{{ category }}')">
                 {{ category }}
             </button>

@@ -694,3 +694,21 @@ body, button, a {
     width: 140px;
     text-align: left;
 }
+
+
+/* Social link text colors */
+.social-option.discord {
+  color: #5865F2;
+}
+
+.social-option.roblox {
+  color: #90A0AC;
+}
+
+.social-option.youtube {
+  color: #FF0000;
+}
+
+.social-option.tiktok {
+  color: #FE2C55;
+}

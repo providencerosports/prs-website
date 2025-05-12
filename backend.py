@@ -1,4 +1,3 @@
-
 from imports import *
 from predefines import *
 from functions import *
@@ -93,13 +92,7 @@ def pfl_page():
 
     return render_template('pfl.html', user=session.get("user"), settings=settings)
 
-@app.route("/pfl/season-stats")
-def pfl_season_stats():
-    return render_league_stats("1068670713529106432", "season", "Season Stats") 
 
-@app.route("/pfl/all-time-stats")
-def pfl_all_time_stats():
-    return render_league_stats("1068670713529106432", "all_time", "All-Time Stats")
 
 @app.route('/pbl')
 def pbl_page():
@@ -108,13 +101,7 @@ def pbl_page():
 
     return render_template('pbl.html', user=session.get("user"), settings=settings)
 
-@app.route("/pbl/season-stats")
-def pbl_season_stats():
-    return render_league_stats("1240014143784747018", "season", "Season Stats") 
 
-@app.route("/pbl/all-time-stats")
-def pbl_all_time_stats():
-    return render_league_stats("1240014143784747018", "all_time", "All-Time Stats")
 
 @app.route('/pbul')
 def pbul_page():
@@ -123,13 +110,25 @@ def pbul_page():
 
     return render_template('pbul.html', user=session.get("user"), settings=settings)
 
-@app.route("/pbul/season-stats")
-def pbul_season_stats():
-    return render_league_stats("1364650269652025354", "season", "Season Stats") 
 
-@app.route("/pbul/all-time-stats")
-def pbul_all_time_stats():
-    return render_league_stats("1364650269652025354", "all_time", "All-Time Stats")
+
+@app.route("/<league>/stats/<section>")
+def unified_league_stats(league, section):
+    guild_map = {
+        "pfl": "1068670713529106432",
+        "pbl": "1240014143784747018",
+        "pbul": "1364650269652025354"
+    }
+
+    title_map = {
+        "season": "Season Stats",
+        "all_time": "All-Time Stats"
+    }
+
+    if league not in guild_map or section not in title_map:
+        return "Invalid league or section", 404
+
+    return render_league_stats(guild_map[league], section, title_map[section])
 
 @app.route("/login")
 def login():

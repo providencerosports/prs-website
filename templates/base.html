@@ -7,6 +7,7 @@
   <title>{% block title %}Providence RoSports{% endblock %}</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/misc_icons/prs_favicon.png') }}" />
+  {% block head %}{% endblock %}
 </head>
 <body>
   <header class="navbar">
