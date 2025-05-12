@@ -21,7 +21,6 @@ import shutil
 import io
 import sqlite3
 from datetime import datetime
-import base64
 
 
 from dotenv import load_dotenv

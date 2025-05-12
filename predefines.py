@@ -2,7 +2,7 @@ from imports import *
 
 scope = ['https://spreadsheets.google.com/feeds',
          'https://www.googleapis.com/auth/drive']
-decoded_json = base64.b64decode(os.environ["GOOGLE_CREDENTIALS_BASE64"]).decode("utf-8")
+decoded_json = os.environ["GOOGLE_CREDENTIALS_JSON"]
 credentials_info = json.loads(decoded_json)
 credentials = ServiceAccountCredentials.from_json_keyfile_dict(credentials_info, scope)
 gc = gspread.authorize(credentials)
