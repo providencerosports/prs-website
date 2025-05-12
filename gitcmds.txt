@@ -1,3 +1,3 @@
-git add .gitignore
-git commit -m "Ignore .env going forward"
-git push origin --force --all
+git add .
+git commit -m "Updating for god knows why"
+git push origin main
