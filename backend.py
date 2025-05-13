@@ -76,7 +76,7 @@ app.secret_key = os.urandom(24)
 
 CLIENT_ID = '1370521645495881789'
 CLIENT_SECRET = 'X94AVQ6FXxIhD7SO-xrG-9_5n1o9NFiv'
-REDIRECT_URI = 'http://localhost:5000/callback'
+REDIRECT_URI = 'https://providencerosports.com/callback'
 
 @app.route("/")
 def home():
