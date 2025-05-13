@@ -752,3 +752,46 @@ body, button, a {
     border-radius: 10px;
     overflow: hidden;
 }
+
+/* Responsive tweaks for mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .auth-status {
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .stats-widget {
+    padding: 1rem;
+  }
+
+  .category-tabs {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .category-tab {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .stats-table-wrapper {
+    overflow-x: auto;
+  }
+
+  .discord-card iframe {
+    height: 400px;
+  }
+}
