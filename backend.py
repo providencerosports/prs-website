@@ -81,10 +81,17 @@ def sync_from_drive():
     print("[SYNC] Sync complete.\n")
 
 def start_auto_sync():
+    sync_from_drive()
+
     def loop():
         while True:
+            now = datetime.utcnow()
+            seconds_until_next_hour = ((60 - now.minute - 1) * 60) + (60 - now.second)
+            print(f"[SYNC] Waiting {seconds_until_next_hour} seconds until the next full hour...")
+            time.sleep(seconds_until_next_hour)
+
             sync_from_drive()
-            time.sleep(1800)
+
     threading.Thread(target=loop, daemon=True).start()
 
 start_auto_sync()

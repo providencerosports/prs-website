@@ -57,6 +57,8 @@ def load_user_data(member_id):
 
 
 def render_league_stats(guild_id: str, section: str, title: str):
+    minutes_since_last_hour = datetime.utcnow().minute
+
     with threading.Lock():
         main_db_conn = sqlite3.connect("main_database.db")
         main_db_cursor = main_db_conn.cursor()
@@ -151,5 +153,6 @@ def render_league_stats(guild_id: str, section: str, title: str):
         sort_column_index=sort_column_index,
         title=title,
         section=section,
-        settings=settings
+        settings=settings,
+        minutes_since_last_hour=minutes_since_last_hour
     )
