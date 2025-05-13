@@ -5,31 +5,63 @@
 
 
 {% block head %}
+
 <style>
-  body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-image: url('{{ settings.info.game_cover }}');
-    background-size: cover;
-    background-position: center;
-    z-index: -2;
+  .category-tab {
+    background-color: transparent;
+    border: 2px solid #{{ settings.info.league_color }};
+    color: #{{ settings.info.league_color }};
+    font-weight: bold;
+    padding: 0.6rem 1.2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.4s ease, color 0.4s ease;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
   }
 
-  body::after {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.90);
-    z-index: -1;
+  .category-tab:hover {
+    background-color: #{{ settings.info.league_color }};
+    color: #000;
+  }
+
+  .category-tab.active {
+    background-color: #{{ settings.info.league_color }};
+    color: #000;
+  }
+
+  .category-tabs {
+    border: none;
+    margin-bottom: 1rem;
+  }
+
+  .category-tabs button {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .category-tabs::after,
+  .category-tabs::before,
+  .category-tabs hr {
+    display: none !important;
+    border: none !important;
+  }
+
+
+
+  .category-tabs { border-bottom: none !important; }
+
+
+
+  .category-tabs {
+    border-bottom: none !important;
+    box-shadow: none !important;
   }
 </style>
+
 {% endblock %}
 
 {% block content %}
@@ -41,12 +73,12 @@
     
 <div class="category-tabs" style="margin-bottom: 1rem;">
     <button class="category-tab {% if section == 'season' %}active{% endif %}"
-            style="color: #{{ settings.info.league_color }}; border-color: #{{ settings.info.league_color }};"
+            
             onclick="switchSection('season')">
         Season
     </button>
     <button class="category-tab {% if section == 'all_time' %}active{% endif %}"
-            style="color: #{{ settings.info.league_color }}; border-color: #{{ settings.info.league_color }};"
+            
             onclick="switchSection('all_time')">
         All-Time
     </button>
@@ -68,7 +100,7 @@ function switchSection(section) {
 <div class="category-tabs">
         {% for category in categories %}
 <style>.tab-button { color: #{{ settings.info.league_color }} !important; }</style>
-            <button class="category-tab {% if category == selected_category %}active{% endif %}" style="color: #{{ settings.info.league_color }}; border-color: #{{ settings.info.league_color }};"
+            <button class="category-tab {% if category == selected_category %}active{% endif %}" 
                     onclick="changeCategory('{{ category }}')">
                 {{ category }}
             </button>
