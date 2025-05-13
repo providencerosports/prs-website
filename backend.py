@@ -10,7 +10,7 @@ def download_file(service, file_id, dest_path):
         done = False
         while not done:
             status, done = downloader.next_chunk()
-    os.replace(temp_path, dest_path)  # Atomic overwrite
+    os.replace(temp_path, dest_path)
     size = os.path.getsize(dest_path)
     print(f"[DOWNLOAD] Saved '{dest_path}' ({size} bytes)")
 
@@ -19,35 +19,29 @@ def sync_from_drive():
 
     print("[SYNC] Starting sync from Google Drive...")
 
-    # Find 'settings' folder
-    results = drive_service.files().list(
+    # Download settings folder files
+    settings_results = drive_service.files().list(
         q="name='settings' and mimeType='application/vnd.google-apps.folder'",
         fields="files(id, name)"
     ).execute()
-    folders = results.get('files', [])
-    if not folders:
+    settings_folders = settings_results.get('files', [])
+    if settings_folders:
+        settings_folder_id = settings_folders[0]['id']
+        print(f"[SYNC] Found settings folder with ID: {settings_folder_id}")
+
+        settings_files = drive_service.files().list(
+            q=f"'{settings_folder_id}' in parents",
+            fields="files(id, name)"
+        ).execute().get('files', [])
+
+        print(f"[SYNC] Found {len(settings_files)} files in 'settings' folder.")
+        os.makedirs('settings', exist_ok=True)
+        for f in settings_files:
+            dest_path = os.path.join('settings', f['name'])
+            print(f"[SYNC] Downloading file: {f['name']} to {dest_path}")
+            download_file(drive_service, f['id'], dest_path)
+    else:
         print("[SYNC] Settings folder not found.")
-        return
-    folder_id = folders[0]['id']
-    print(f"[SYNC] Found settings folder with ID: {folder_id}")
-
-    # Download all files in the settings folder
-    files = drive_service.files().list(
-        q=f"'{folder_id}' in parents",
-        fields="files(id, name)"
-    ).execute().get('files', [])
-
-    print(f"[SYNC] Found {len(files)} files in 'settings' folder.")
-    for f in files:
-        print(f"  - {f['name']}")
-
-
-    os.makedirs('settings', exist_ok=True)
-
-    for f in files:
-        dest_path = os.path.join('settings', f['name'])
-        print(f"[SYNC] Downloading file: {f['name']} to {dest_path}")
-        download_file(drive_service, f['id'], dest_path)
 
     # Download main_database.db
     db_files = drive_service.files().list(
@@ -60,13 +54,37 @@ def sync_from_drive():
     else:
         print("[SYNC] main_database.db not found on Drive.")
 
+    # Download databases folder files
+    databases_results = drive_service.files().list(
+        q="name='databases' and mimeType='application/vnd.google-apps.folder'",
+        fields="files(id, name)"
+    ).execute()
+    databases_folders = databases_results.get('files', [])
+    if databases_folders:
+        databases_folder_id = databases_folders[0]['id']
+        print(f"[SYNC] Found databases folder with ID: {databases_folder_id}")
+
+        databases_files = drive_service.files().list(
+            q=f"'{databases_folder_id}' in parents",
+            fields="files(id, name)"
+        ).execute().get('files', [])
+
+        print(f"[SYNC] Found {len(databases_files)} files in 'databases' folder.")
+        os.makedirs('databases', exist_ok=True)
+        for f in databases_files:
+            dest_path = os.path.join('databases', f['name'])
+            print(f"[SYNC] Downloading file: {f['name']} to {dest_path}")
+            download_file(drive_service, f['id'], dest_path)
+    else:
+        print("[SYNC] databases folder not found.")
+
     print("[SYNC] Sync complete.\n")
 
 def start_auto_sync():
     def loop():
         while True:
             sync_from_drive()
-            time.sleep(1800)  # Every 30 minutes
+            time.sleep(1800)
     threading.Thread(target=loop, daemon=True).start()
 
 start_auto_sync()
@@ -92,8 +110,6 @@ def pfl_page():
 
     return render_template('pfl.html', user=session.get("user"), settings=settings)
 
-
-
 @app.route('/pbl')
 def pbl_page():
     guild_id = "1240014143784747018"
@@ -101,16 +117,12 @@ def pbl_page():
 
     return render_template('pbl.html', user=session.get("user"), settings=settings)
 
-
-
 @app.route('/pbul')
 def pbul_page():
     guild_id = "1364650269652025354"
     settings = load_settings_json("guild_settings").get(guild_id, {})
 
     return render_template('pbul.html', user=session.get("user"), settings=settings)
-
-
 
 @app.route("/<league>/stats/<section>")
 def unified_league_stats(league, section):
@@ -184,6 +196,10 @@ def profile():
 @app.template_filter('datetimeformat')
 def datetimeformat(value):
     return datetime.utcfromtimestamp(value).strftime('%b %d, %Y')
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
 
 if __name__ == "__main__":
     app.run(debug=True)
