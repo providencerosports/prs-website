@@ -69,7 +69,7 @@
 <div class="stats-widget">
     <h1 class="stats-heading" style="color: #{{ settings.info.league_color }}">{{ settings.info.league_name }} {{ title }}</h1>
 <p style="text-align: center; font-size: 0.9rem; color: #{{ settings.info.league_color }}; margin-bottom: 1.5rem;">
-    <em>Note: Stats only update once per hour.</em>
+    <em>Stats only update once per hour</em>
 </p>
 
 
@@ -131,7 +131,7 @@ function switchSection(section) {
                 {% for user in stats_data %}
                     <tr>
                         {% for value in user.stats %}
-                            <td class="{% if loop.index0 == sort_column_index %}highlight-column{% endif %}">{{ value }}</td>
+                            <td class="{% if loop.index0 == sort_column_index %}highlight-column{% endif %}">{% if loop.index0 == 1 %}<a href="https://www.roblox.com/users/profile?username={{ value }}" target="_blank" style="color: #{{ settings.info.league_color }};">{{ value }}</a>{% else %}{{ value }}{% endif %}</td>
                         {% endfor %}
                     </tr>
                 {% endfor %}
