@@ -14,12 +14,21 @@ def download_file(service, file_id, dest_path):
     size = os.path.getsize(dest_path)
     print(f"[DOWNLOAD] Saved '{dest_path}' ({size} bytes)")
 
+def verify_db_schema():
+    conn = sqlite3.connect("main_database.db")
+    cursor = conn.cursor()
+    cursor.execute("PRAGMA table_info(stats_database);")
+    columns = [col[1] for col in cursor.fetchall()]
+    if "category_order_index" not in columns:
+        raise RuntimeError("Downloaded main_database.db is missing 'category_order_index' column.")
+    print("[VERIFY] Database schema check passed.")
+    conn.close()
+
 def sync_from_drive():
     drive_service = build('drive', 'v3', credentials=credentials)
 
     print("[SYNC] Starting sync from Google Drive...")
 
-    # Download settings folder files
     settings_results = drive_service.files().list(
         q="name='settings' and mimeType='application/vnd.google-apps.folder'",
         fields="files(id, name)"
@@ -43,7 +52,6 @@ def sync_from_drive():
     else:
         print("[SYNC] Settings folder not found.")
 
-    # Download main_database.db
     db_files = drive_service.files().list(
         q="name='main_database.db'",
         fields="files(id, name)"
@@ -51,10 +59,10 @@ def sync_from_drive():
     if db_files:
         print("[SYNC] Downloading main_database.db")
         download_file(drive_service, db_files[0]['id'], 'main_database.db')
+        verify_db_schema()
     else:
         print("[SYNC] main_database.db not found on Drive.")
 
-    # Download databases folder files
     databases_results = drive_service.files().list(
         q="name='databases' and mimeType='application/vnd.google-apps.folder'",
         fields="files(id, name)"
@@ -89,11 +97,9 @@ def start_auto_sync():
             seconds_until_next_hour = ((60 - now.minute - 1) * 60) + (60 - now.second)
             print(f"[SYNC] Waiting {seconds_until_next_hour} seconds until the next full hour...")
             time.sleep(seconds_until_next_hour)
-
             sync_from_drive()
 
     threading.Thread(target=loop, daemon=True).start()
-
 
 if __name__ == "__main__":
     start_auto_sync()
@@ -126,21 +132,18 @@ def home():
 def pfl_page():
     guild_id = "1068670713529106432"
     settings = load_settings_json("guild_settings").get(guild_id, {})
-
     return render_template('pfl.html', user=session.get("user"), settings=settings)
 
 @app.route('/pbl')
 def pbl_page():
     guild_id = "1240014143784747018"
     settings = load_settings_json("guild_settings").get(guild_id, {})
-
     return render_template('pbl.html', user=session.get("user"), settings=settings)
 
 @app.route('/pbul')
 def pbul_page():
     guild_id = "1364650269652025354"
     settings = load_settings_json("guild_settings").get(guild_id, {})
-
     return render_template('pbul.html', user=session.get("user"), settings=settings)
 
 @app.route("/<league>/stats/<section>")
@@ -209,7 +212,6 @@ def profile():
 
     discord_id = str(session["user"]["id"])
     user_data = load_user_data(discord_id)
-
     return render_template("profile.html", user=session["user"], user_data=user_data)
 
 @app.template_filter('datetimeformat')
