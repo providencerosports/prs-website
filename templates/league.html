@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+{% block title %}{{ settings.info.league_name }} - Providence RoSports{% endblock %}
+{% block content %}
+
+<style>
+  .widget-box p,
+  .join-now-btn,
+  .league-tool-link {
+    color: #{{ settings.info.league_color }};
+    border-color: #{{ settings.info.league_color }};
+  }
+
+  .join-now-btn:hover,
+  .league-tool-link:hover {
+    background-color: #{{ settings.info.league_color }};
+    color: #000;
+  }
+
+  .join-now-btn {
+    background-color: transparent;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+
+  .league-tool-link {
+    background-color: transparent;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.6rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.4s ease, color 0.4s ease;
+    display: block;
+  }
+
+  .widget-box {
+    background-color: #1E1E1E;
+    border-radius: 12px;
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-discord-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .left-about {
+    flex: 1 1 60%;
+  }
+
+  .right-discord {
+    flex: 1 1 35%;
+    min-width: 300px;
+  }
+
+  .section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('{{ settings.info.game_cover }}');
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.90);
+    z-index: -1;
+  }
+</style>
+
+<main class="hero-section fade-in">
+  <h1 class="hero-title" style="color: #{{ settings.info.league_color }};">{{ settings.info.league_full_name }}</h1>
+  <p class="hero-subtitle">
+    <a href="{{ settings.info.game_link }}" target="_blank" style="color: #4da6ff; text-decoration: underline;">
+      {{ settings.info.game_name }}
+    </a>
+  </p>
+</main>
+
+<div style="text-align: center; margin-top: 1rem;">
+  <a href="{{ settings.info.league_invite }}" target="_blank" class="join-now-btn">
+    Join Now
+  </a>
+</div>
+
+<section class="about-discord-section fade-in-delayed">
+<div class="section-container">
+  <div class="about-discord-wrapper">
+    <div class="left-about">
+
+      <div class="widget-box">
+        <h2 style="color: #{{ settings.info.league_color }};">League Tools</h2>
+        <div style="height: 0.75rem;"></div>
+        <ul style="list-style: none; padding-left: 0; margin: 0;">
+          <li style="margin-bottom: 0.75rem;">
+            <a href="/{{ settings.info.league_name | lower }}/stats/season" class="league-tool-link">Player Statistics</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="widget-box">
+        <h2 style="color: #{{ settings.info.league_color }};">What is {{ settings.info.league_name }}?</h2>
+        <p>{{ settings.info.league_description }}</p>
+      </div>
+    </div>
+
+    <div class="right-discord">
+      <div class="widget-box">
+        <iframe 
+          src="https://discord.com/widget?id={{ settings.info.discord_widget_id }}&theme=dark" 
+          allowtransparency="true" 
+          frameborder="0" 
+          style="width: 100%; height: 500px; border: none;"
+          sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+{% endblock %}

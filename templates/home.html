@@ -27,24 +27,10 @@
     z-index: -1;
   }
 
-  .about-discord-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
-  .left-column {
-    flex: 1 1 60%;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
-  .right-column {
-    flex: 1 1 35%;
-    min-width: 300px;
+  .section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
   }
 
   .widget-box {
@@ -52,30 +38,92 @@
     border-radius: 12px;
     padding: 1.25rem;
     margin-bottom: 1.5rem;
+    text-align: center;
   }
 
-
-  .section-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
+  .league-card {
+    width: 300px;
+    min-width: 300px;
+    height: 180px;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+    border: 3px solid white;
+    position: relative;
+    overflow: hidden;
   }
 
-  @media (max-width: 900px) {
-    .about-discord-section {
-      flex-direction: column;
-    }
-
-    .left-column, .right-column {
-      flex: 1 1 100%;
-    }
+  .league-card:hover {
+    transform: scale(1.05);
   }
 
-
-  .widget-box ul {
-    padding-left: 1.75rem;
+  .league-card .overlay {
+    pointer-events: none;
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
   }
 
+  .league-card:hover .overlay {
+    opacity: 1;
+  }
+
+  .league-card .league-logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+  }
+
+  .league-card .overlay > * {
+    pointer-events: auto;
+  }
+
+  .league-card .title {
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    color: white;
+  }
+
+  .league-card .subtitle {
+    font-size: 1rem;
+    font-weight: normal;
+    color: white;
+  }
+
+  .hero-section {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  .hero-title {
+    color: var(--prs-color);
+  }
+
+  .hero-subtitle {
+    color: white;
+  }
 </style>
 
 <main class="hero-section fade-in">
@@ -83,44 +131,21 @@
   <p class="hero-subtitle">Start your Roblox sporting career here</p>
 </main>
 
-<div class="section-container">
-<section class="about-discord-section fade-in-delayed">
-  
-  <div class="left-column">
-    <div class="widget-box">
-      <h2>About Us</h2>
-      <p>
-        Providence RoSports is a premier destination for competitive Roblox sports leagues.
-        We operate multiple leagues and foster a community centered on fair play, entertainment,
-        and growth for players of all skill levels. Whether you're here to compete or spectate,
-        welcome to the most dynamic & organized sports experience on the platform.
-      </p>
+<div class="section-container fade-in-delayed" style="margin-top: 3rem;">
+  <div class="widget-box">
+    <h2 style="color: var(--prs-color); font-size: 2rem; margin-bottom: 1.5rem;">Explore Our Leagues</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
+      {% for league in league_data %}
+<a href="/{{ league.name.lower() }}" class="league-card" style="background-image: url('{{ league.cover }}'); border-color: {{ league.color }};">
+        <div class="overlay">
+          <img src="{{ url_for('static', filename='images/league_icons/' + league.name.lower() + '.png') }}" class="league-logo" alt="logo">
+          <div class="title" style="color: {{ league.color }};">{{ league.name }}</div>
+          <div class="subtitle" style="color: {{ league.color }};">{{ league.game_name }}</div>
+        </div>
+      </a>
+      {% endfor %}
     </div>
+  </div>
+</div>
 
-    <div class="widget-box">
-      <h2>What Our Leagues Have</h2>
-      <ul>
-        <li>Competition</li>
-        <li>Organization</li>
-        <li>Advanced Automation</li>
-        <li>Robux Prizes</li>
-        <li>Community Events</li>
-        <li>Game Streams</li>
-      </ul>
-    </div>
-  </div>
-    
-  <div class="right-column">
-<div class="widget-box">
-  <iframe 
-    src="https://discord.com/widget?id=656863051802476548&theme=dark" 
-    allowtransparency="true" 
-    frameborder="0" 
-    style="width: 100%; height: 500px; border: none;"
-    sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
-  </iframe>
-  </div>
-</div>
-</section>
-</div>
 {% endblock %}

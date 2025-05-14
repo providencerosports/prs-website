@@ -94,7 +94,9 @@ def start_auto_sync():
 
     threading.Thread(target=loop, daemon=True).start()
 
-start_auto_sync()
+
+if __name__ == "__main__":
+    start_auto_sync()
 
 app = Flask(__name__, static_url_path='/static', static_folder='static', template_folder='templates')
 app.secret_key = os.urandom(24)
@@ -105,10 +107,20 @@ REDIRECT_URI = 'https://providencerosports.com/callback'
 
 @app.route("/")
 def home():
-    guild_id = "656863051802476548"
-    settings = load_settings_json("guild_settings").get(guild_id, {})
-
-    return render_template('home.html', user=session.get("user"), settings=settings)
+    league_ids = load_settings_json("guild_ids").get("league_ids", [])
+    league_data = []
+    for league_id in league_ids:
+        league_id = str(league_id)
+        settings = load_settings_json("guild_settings").get(league_id)
+        if settings:
+            league_data.append({
+                "url": f"/{settings['info']['league_name'].lower()}",
+                "name": settings['info']['league_name'],
+                "game_name": settings['info']['game_name'],
+                "color": f"#{settings['info']['league_color']}",
+                "cover": settings['info']['game_cover']
+            })
+    return render_template('home.html', user=session.get("user"), league_data=league_data)
 
 @app.route('/pfl')
 def pfl_page():
