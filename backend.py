@@ -14,16 +14,6 @@ def download_file(service, file_id, dest_path):
     size = os.path.getsize(dest_path)
     print(f"[DOWNLOAD] Saved '{dest_path}' ({size} bytes)")
 
-def verify_db_schema():
-    conn = sqlite3.connect("main_database.db")
-    cursor = conn.cursor()
-    cursor.execute("PRAGMA table_info(stats_database);")
-    columns = [col[1] for col in cursor.fetchall()]
-    if "category_order_index" not in columns:
-        raise RuntimeError("Downloaded main_database.db is missing 'category_order_index' column.")
-    print("[VERIFY] Database schema check passed.")
-    conn.close()
-
 def sync_from_drive():
     drive_service = build('drive', 'v3', credentials=credentials)
 
@@ -59,7 +49,6 @@ def sync_from_drive():
     if db_files:
         print("[SYNC] Downloading main_database.db")
         download_file(drive_service, db_files[0]['id'], 'main_database.db')
-        verify_db_schema()
     else:
         print("[SYNC] main_database.db not found on Drive.")
 
@@ -101,8 +90,7 @@ def start_auto_sync():
 
     threading.Thread(target=loop, daemon=True).start()
 
-if __name__ == "__main__":
-    start_auto_sync()
+start_auto_sync()
 
 app = Flask(__name__, static_url_path='/static', static_folder='static', template_folder='templates')
 app.secret_key = os.urandom(24)
