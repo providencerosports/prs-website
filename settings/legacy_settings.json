@@ -1,0 +1,446 @@
+{
+    "1068670713529106432": {
+        "top5_id": 1238171877843669012,
+        "top25_id": 1238172059318878208,
+        "top50_id": 1238172127807541350,
+        "legacy_ranks": {
+            "legacy_rank1": {
+                "role_id": 1264268439850061975,
+                "score": 1
+            },
+            "legacy_rank2": {
+                "role_id": 1264267989520220170,
+                "score": 200
+            },
+            "legacy_rank3": {
+                "role_id": 1264268174812123198,
+                "score": 400
+            },
+            "legacy_rank4": {
+                "role_id": 1264268234291544125,
+                "score": 600
+            },
+            "legacy_rank5": {
+                "role_id": 1264268536977686538,
+                "score": 800
+            },
+            "legacy_rank6": {
+                "role_id": 1264268638182051872,
+                "score": 1000
+            },
+            "legacy_rank7": {
+                "role_id": 1264268733363519578,
+                "score": 1200
+            },
+            "legacy_rank8": {
+                "role_id": 1264268809750188113,
+                "score": 1600
+            },
+            "legacy_rank9": {
+                "role_id": 1264268874740797622,
+                "score": 2000
+            },
+            "legacy_rank10": {
+                "role_id": 1264268931925803108,
+                "score": 2400
+            },
+            "legacy_rank11": {
+                "role_id": 1264268983176265859,
+                "score": 2800
+            },
+            "legacy_rank12": {
+                "role_id": 1264269035101753406,
+                "score": 3000
+            },
+            "legacy_rank13": {
+                "role_id": 1264269248071598172,
+                "score": 3600
+            },
+            "legacy_rank14": {
+                "role_id": 1264269323724390554,
+                "score": 4200
+            },
+            "legacy_rank15": {
+                "role_id": 1264269379017768990,
+                "score": 4800
+            },
+            "legacy_rank16": {
+                "role_id": 1264269437498953851,
+                "score": 5400
+            },
+            "legacy_rank17": {
+                "role_id": 1264269545678573699,
+                "score": 6000
+            },
+            "legacy_rank18": {
+                "role_id": 1264269611377889455,
+                "score": 7200
+            },
+            "legacy_rank19": {
+                "role_id": 1264269684371624097,
+                "score": 8400
+            },
+            "legacy_rank20": {
+                "role_id": 1264269745469915338,
+                "score": 9600
+            },
+            "legacy_rank21": {
+                "role_id": 1264269811639386122,
+                "score": 10800
+            },
+            "legacy_rank22": {
+                "role_id": 1264269867679481886,
+                "score": 12000
+            },
+            "legacy_rank23": {
+                "role_id": 1264269937275310161,
+                "score": 13200
+            },
+            "legacy_rank24": {
+                "role_id": 1264270037586284678,
+                "score": 14400
+            },
+            "legacy_rank25": {
+                "role_id": 1264270708226396276,
+                "score": 15600
+            },
+            "legacy_rank26": {
+                "role_id": 1264270770410881226,
+                "score": 16800
+            }
+        }
+    },
+    "1318677095798411294": {
+        "top5_id": 1318677096037355605,
+        "top25_id": 1318677096037355604,
+        "top50_id": 1318677096037355603,
+        "legacy_ranks": {
+            "legacy_rank1": {
+                "role_id": 1318677095982960666,
+                "score": 1
+            },
+            "legacy_rank2": {
+                "role_id": 1318677095982960667,
+                "score": 200
+            },
+            "legacy_rank3": {
+                "role_id": 1318677095982960668,
+                "score": 400
+            },
+            "legacy_rank4": {
+                "role_id": 1318677095982960669,
+                "score": 600
+            },
+            "legacy_rank5": {
+                "role_id": 1318677095982960670,
+                "score": 800
+            },
+            "legacy_rank6": {
+                "role_id": 1318677095999602718,
+                "score": 1000
+            },
+            "legacy_rank7": {
+                "role_id": 1318677095999602719,
+                "score": 1200
+            },
+            "legacy_rank8": {
+                "role_id": 1318677095999602720,
+                "score": 1600
+            },
+            "legacy_rank9": {
+                "role_id": 1318677095999602721,
+                "score": 2000
+            },
+            "legacy_rank10": {
+                "role_id": 1318677095999602722,
+                "score": 2400
+            },
+            "legacy_rank11": {
+                "role_id": 1318677095999602723,
+                "score": 2800
+            },
+            "legacy_rank12": {
+                "role_id": 1318677095999602724,
+                "score": 3000
+            },
+            "legacy_rank13": {
+                "role_id": 1318677095999602725,
+                "score": 3600
+            },
+            "legacy_rank14": {
+                "role_id": 1318677095999602726,
+                "score": 4200
+            },
+            "legacy_rank15": {
+                "role_id": 1318677095999602727,
+                "score": 4800
+            },
+            "legacy_rank16": {
+                "role_id": 1318677096012447876,
+                "score": 5400
+            },
+            "legacy_rank17": {
+                "role_id": 1318677096012447877,
+                "score": 6000
+            },
+            "legacy_rank18": {
+                "role_id": 1318677096012447878,
+                "score": 7200
+            },
+            "legacy_rank19": {
+                "role_id": 1318677096012447879,
+                "score": 8400
+            },
+            "legacy_rank20": {
+                "role_id": 1318677096012447880,
+                "score": 9600
+            },
+            "legacy_rank21": {
+                "role_id": 1318677096012447881,
+                "score": 10800
+            },
+            "legacy_rank22": {
+                "role_id": 1318677096012447882,
+                "score": 12000
+            },
+            "legacy_rank23": {
+                "role_id": 1318677096012447883,
+                "score": 13200
+            },
+            "legacy_rank24": {
+                "role_id": 1318677096012447884,
+                "score": 14400
+            },
+            "legacy_rank25": {
+                "role_id": 1318677096012447885,
+                "score": 15600
+            },
+            "legacy_rank26": {
+                "role_id": 1318677096037355602,
+                "score": 16800
+            }
+        }
+    },
+    "1240014143784747018": {
+        "top5_id": 0,
+        "top25_id": 0,
+        "top50_id": 0,
+        "legacy_ranks": {
+            "legacy_rank1": {
+                "role_id": 1345822863445196911,
+                "score": 1
+            },
+            "legacy_rank2": {
+                "role_id": 1345822862157811815,
+                "score": 200
+            },
+            "legacy_rank3": {
+                "role_id": 1345822860563976294,
+                "score": 400
+            },
+            "legacy_rank4": {
+                "role_id": 1345822859196502258,
+                "score": 600
+            },
+            "legacy_rank5": {
+                "role_id": 1345822857258729567,
+                "score": 800
+            },
+            "legacy_rank6": {
+                "role_id": 1345822856088518838,
+                "score": 1000
+            },
+            "legacy_rank7": {
+                "role_id": 1345822855044141056,
+                "score": 1200
+            },
+            "legacy_rank8": {
+                "role_id": 1345822853777457295,
+                "score": 1600
+            },
+            "legacy_rank9": {
+                "role_id": 1345822852724822026,
+                "score": 2000
+            },
+            "legacy_rank10": {
+                "role_id": 1345822851277656157,
+                "score": 2400
+            },
+            "legacy_rank11": {
+                "role_id": 1345822850157641760,
+                "score": 2800
+            },
+            "legacy_rank12": {
+                "role_id": 1345822849184694324,
+                "score": 3000
+            },
+            "legacy_rank13": {
+                "role_id": 1345822847750242315,
+                "score": 3600
+            },
+            "legacy_rank14": {
+                "role_id": 1345822846579904512,
+                "score": 4200
+            },
+            "legacy_rank15": {
+                "role_id": 1345822844873084948,
+                "score": 4800
+            },
+            "legacy_rank16": {
+                "role_id": 1345822843568525313,
+                "score": 5400
+            },
+            "legacy_rank17": {
+                "role_id": 1345822842700304484,
+                "score": 6000
+            },
+            "legacy_rank18": {
+                "role_id": 1345822841706385528,
+                "score": 7200
+            },
+            "legacy_rank19": {
+                "role_id": 1345822840754147470,
+                "score": 8400
+            },
+            "legacy_rank20": {
+                "role_id": 1345822839105917049,
+                "score": 9600
+            },
+            "legacy_rank21": {
+                "role_id": 1345822838237696030,
+                "score": 10800
+            },
+            "legacy_rank22": {
+                "role_id": 1345822837071544350,
+                "score": 12000
+            },
+            "legacy_rank23": {
+                "role_id": 1345822835917983904,
+                "score": 13200
+            },
+            "legacy_rank24": {
+                "role_id": 1345822834831921163,
+                "score": 14400
+            },
+            "legacy_rank25": {
+                "role_id": 1345822832885633035,
+                "score": 15600
+            },
+            "legacy_rank26": {
+                "role_id": 1345822832029991124,
+                "score": 16800
+            }
+        }
+    },
+    "1364650269652025354": {
+        "top5_id": 1364650269862006824,
+        "top25_id": 1364650269844967443,
+        "top50_id": 0,
+        "legacy_ranks": {
+            "legacy_rank1": {
+                "role_id": 1364650269815603323,
+                "score": 1
+            },
+            "legacy_rank2": {
+                "role_id": 1364650269815603324,
+                "score": 200
+            },
+            "legacy_rank3": {
+                "role_id": 1364650269815603325,
+                "score": 400
+            },
+            "legacy_rank4": {
+                "role_id": 1364650269815603326,
+                "score": 600
+            },
+            "legacy_rank5": {
+                "role_id": 1364650269815603327,
+                "score": 800
+            },
+            "legacy_rank6": {
+                "role_id": 1364650269815603328,
+                "score": 1000
+            },
+            "legacy_rank7": {
+                "role_id": 1364650269815603329,
+                "score": 1200
+            },
+            "legacy_rank8": {
+                "role_id": 1364650269815603330,
+                "score": 1600
+            },
+            "legacy_rank9": {
+                "role_id": 1364650269832511630,
+                "score": 2000
+            },
+            "legacy_rank10": {
+                "role_id": 1364650269832511631,
+                "score": 2400
+            },
+            "legacy_rank11": {
+                "role_id": 1364650269832511632,
+                "score": 2800
+            },
+            "legacy_rank12": {
+                "role_id": 1364650269832511633,
+                "score": 3000
+            },
+            "legacy_rank13": {
+                "role_id": 1364650269832511634,
+                "score": 3600
+            },
+            "legacy_rank14": {
+                "role_id": 1364650269832511635,
+                "score": 4200
+            },
+            "legacy_rank15": {
+                "role_id": 1364650269832511636,
+                "score": 4800
+            },
+            "legacy_rank16": {
+                "role_id": 1364650269832511637,
+                "score": 5400
+            },
+            "legacy_rank17": {
+                "role_id": 1364650269832511638,
+                "score": 6000
+            },
+            "legacy_rank18": {
+                "role_id": 1364650269832511639,
+                "score": 7200
+            },
+            "legacy_rank19": {
+                "role_id": 1364650269844967434,
+                "score": 8400
+            },
+            "legacy_rank20": {
+                "role_id": 1364650269844967435,
+                "score": 9600
+            },
+            "legacy_rank21": {
+                "role_id": 1364650269844967436,
+                "score": 10800
+            },
+            "legacy_rank22": {
+                "role_id": 1364650269844967437,
+                "score": 12000
+            },
+            "legacy_rank23": {
+                "role_id": 1364650269844967438,
+                "score": 13200
+            },
+            "legacy_rank24": {
+                "role_id": 1364650269844967439,
+                "score": 14400
+            },
+            "legacy_rank25": {
+                "role_id": 1364650269844967440,
+                "score": 15600
+            },
+            "legacy_rank26": {
+                "role_id": 1364650269844967441,
+                "score": 16800
+            }
+        }
+    }
+}

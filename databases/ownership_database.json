@@ -1,0 +1,529 @@
+{
+    "1068670713529106432": {
+        "696109037699334164": {
+            "team_id": 1079505233190850560,
+            "appoint_time": 1737953601,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": -1,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "568169126653329420": {
+            "team_id": 1194325650497097739,
+            "appoint_time": 1736444472,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 0,
+            "series_ffls": 0,
+            "drop_below_min_time": 1745731367,
+            "cleared_min_roster": true
+        },
+        "440697222133448704": {
+            "team_id": 1261925943375695872,
+            "appoint_time": 1734048046,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 1,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "886327284292808745": {
+            "team_id": 1261927801725124658,
+            "appoint_time": 1736838038,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 0,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "1074810444532957205": {
+            "team_id": 1227303252748533760,
+            "appoint_time": 1737815711,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 0,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "486232733698359296": {
+            "team_id": 1135035898170454086,
+            "appoint_time": 1740239180,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 0,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "1215398002248912896": {
+            "team_id": 1079474181986582628,
+            "appoint_time": 1740239579,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 1,
+            "series_ffls": 1,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "718895103397199982": {
+            "team_id": 1088642430963826778,
+            "appoint_time": 1740245533,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 2,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "914695625948409867": {
+            "team_id": 1131511584489996318,
+            "appoint_time": 1740965248,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 3,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "930611216064323655": {
+            "team_id": 1079477845946023936,
+            "appoint_time": 1742220112,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": -1,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "845527387181547580": {
+            "team_id": 1069775690758631455,
+            "appoint_time": 1743952225,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 3,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "819455098500939787": {
+            "team_id": 1194126538820562985,
+            "appoint_time": 1743952234,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 0,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "1128180981745066106": {
+            "team_id": 1079508446086438982,
+            "appoint_time": 1743952363,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 1,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "1278900259862609930": {
+            "team_id": 1261802244052095028,
+            "appoint_time": 1743952749,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 0,
+            "series_ffls": 0,
+            "drop_below_min_time": 1744242992,
+            "cleared_min_roster": true
+        },
+        "930155213032153158": {
+            "team_id": 1134855083801186344,
+            "appoint_time": 1744120896,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": -1,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "1122040447100010607": {
+            "team_id": 1159911704168255589,
+            "appoint_time": 1744728152,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 1,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "534569646838382592": {
+            "team_id": 1068670962284892261,
+            "appoint_time": 1744728419,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 0,
+            "series_ffls": 0,
+            "drop_below_min_time": 1745118180,
+            "cleared_min_roster": true
+        },
+        "1071930647016374313": {
+            "team_id": 1197076921507401809,
+            "appoint_time": 1744744333,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 0,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "1042978871680704525": {
+            "team_id": 1146504588040613888,
+            "appoint_time": 1744815639,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 1,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "1073772706488651776": {
+            "team_id": 1068670856869457930,
+            "appoint_time": 1744898451,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": -1,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "1353314088532312084": {
+            "team_id": 1298273655448666113,
+            "appoint_time": 1745068653,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 0,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "987556084434739201": {
+            "team_id": 1136511312537587845,
+            "appoint_time": 1745071267,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 1,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "1127460798894198845": {
+            "team_id": 1261803023785787402,
+            "appoint_time": 1745325571,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 0,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "651160482106834952": {
+            "team_id": 1146488530592333864,
+            "appoint_time": 1745330465,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 0,
+            "series_ffls": 0,
+            "drop_below_min_time": 1745350745,
+            "cleared_min_roster": true
+        },
+        "795700729770672140": {
+            "team_id": 1197079878537846865,
+            "appoint_time": 1745416840,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 0,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "800912169352036372": {
+            "team_id": 1261803086691700797,
+            "appoint_time": 1745503258,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 1,
+            "series_ffls": 0,
+            "drop_below_min_time": 1745548816,
+            "cleared_min_roster": true
+        },
+        "755787806508580954": {
+            "team_id": 1226712063683067934,
+            "appoint_time": 1745935257,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 0,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "873958132852858991": {
+            "team_id": 1132105213025726464,
+            "appoint_time": 1745935297,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 0,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "1256995842221408469": {
+            "team_id": 1197069634520756266,
+            "appoint_time": 1745937068,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 0,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "1356753168364736702": {
+            "team_id": 1135586965224427610,
+            "appoint_time": 1745948953,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 0,
+            "series_ffls": 0,
+            "drop_below_min_time": 1746053083,
+            "cleared_min_roster": true
+        },
+        "724338026221797416": {
+            "team_id": 1135033614564851823,
+            "appoint_time": 1745965297,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 0,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "1294789661532618763": {
+            "team_id": 1135395983715483799,
+            "appoint_time": 1745971768,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 0,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "1307004990065348659": {
+            "team_id": 1079507480175968448,
+            "appoint_time": 1746021652,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 0,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "1036071781632573540": {
+            "team_id": 1261802430656413747,
+            "appoint_time": 1746039201,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 0,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "269585705058041866": {
+            "team_id": 1068960168529899540,
+            "appoint_time": 1746111655,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 0,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "541056122803716108": {
+            "team_id": 1135396191312560178,
+            "appoint_time": 1746111682,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 0,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        }
+    },
+    "1318677095798411294": {
+        "914541496932393010": {
+            "team_id": 1325977892018196550,
+            "appoint_time": 1739546807,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 0,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "1124129827407003728": {
+            "team_id": 1325980330884071444,
+            "appoint_time": 1741533109,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 1,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "594242149654986753": {
+            "team_id": 1325980536833048658,
+            "appoint_time": 1742828881,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 0,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": false
+        },
+        "342709676678447105": {
+            "team_id": 1325979419805876365,
+            "appoint_time": 1742828885,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 0,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "857273474539192342": {
+            "team_id": 1325980724519501934,
+            "appoint_time": 1743856738,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 1,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": false
+        }
+    },
+    "1240014143784747018": {
+        "1106134693352583169": {
+            "team_id": 1346669184783876107,
+            "appoint_time": 1742314230,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 0,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "815225397422981171": {
+            "team_id": 1347269503490326598,
+            "appoint_time": 1743080124,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 1,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "1331046199347773511": {
+            "team_id": 1347270050616180788,
+            "appoint_time": 1743890494,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 1,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "617808605424386057": {
+            "team_id": 1363979546122260603,
+            "appoint_time": 1745414460,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 0,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "819455098500939787": {
+            "team_id": 1363979777698173000,
+            "appoint_time": 1745414462,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": -1,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "773411277506478081": {
+            "team_id": 1363979437472743434,
+            "appoint_time": 1745414463,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 0,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "1156348930133598268": {
+            "team_id": 1346666900972638228,
+            "appoint_time": 1745414631,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 1,
+            "series_ffls": 0,
+            "drop_below_min_time": 1746145664,
+            "cleared_min_roster": true
+        },
+        "560611578890813441": {
+            "team_id": 1347269341787193354,
+            "appoint_time": 1745453726,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 0,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "1065757598860718182": {
+            "team_id": 1363979845234593792,
+            "appoint_time": 1745506845,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 0,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "1094989588738617424": {
+            "team_id": 1347269849877053440,
+            "appoint_time": 1746021588,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 0,
+            "series_ffls": 0,
+            "drop_below_min_time": null,
+            "cleared_min_roster": true
+        },
+        "1361385473368522996": {
+            "team_id": 1347269731119530087,
+            "appoint_time": 1746028070,
+            "warnings": 0,
+            "last_warning": null,
+            "season_ffls": 0,
+            "series_ffls": 0,
+            "drop_below_min_time": 1746064865,
+            "cleared_min_roster": true
+        }
+    },
+    "1364650269652025354": {}
+}

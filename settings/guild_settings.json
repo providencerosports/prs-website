@@ -3,6 +3,8 @@
         "info": {
             "league_name": "Providence RoSports",
             "league_color": "D0C385",
+            "league_emoji": "<:prs:1363223714878984222>",
+            "league_logo": "https://cdn.discordapp.com/emojis/1363223714878984222.png",
             "roblox_group_url": "https://www.roblox.com/groups/32825741/Providence-RoSports#!/about",
             "standard_practice_url": "https://docs.google.com/document/d/1OFmZsXV5-hm-IWsoOeI3oMxMj6bh-DDBwkYkwSbMHpo/edit?usp=sharing",
             "roblox_verify_bot_id": 426537812993638400,
@@ -58,6 +60,7 @@
             "league_full_name": "Providence Football League",
             "league_color": "EDC96B",
             "league_emoji": "<:pfl:1363224055100080401>",
+            "league_logo": "https://cdn.discordapp.com/emojis/1363224055100080401.png",
             "league_invite": "https://discord.gg/pfl",
             "game_name": "Football Fusion 2",
             "game_link": "https://www.roblox.com/games/8204899140/Football-Fusion-2",
@@ -140,7 +143,7 @@
             "groups_message_id": 1336729596682305606,
             "bidding_message_id": 1342200722707447932,
             "info_message_id": 1293651937627078700,
-            "schedule_message_id": 1370392070941970453
+            "schedule_message_id": 1372200655036481556
         },
         "media": {
             "twitter_id": 1209201092135493763,
@@ -157,6 +160,7 @@
             "staff_apps_channel_id": 1337467088583004261
         },
         "settings": {
+            "forfeits_allowed": 2,
             "regular_deadline_days": 6,
             "playoff_deadline_days": 2,
             "auto_gametimes": false,
@@ -193,6 +197,7 @@
             "league_full_name": "Providence Universe Football League",
             "league_color": "0080FF",
             "league_emoji": "<:pufl:1318686636078534797>",
+            "league_logo": "https://cdn.discordapp.com/emojis/1318686636078534797.png",
             "league_invite": "https://discord.gg/gD7WQ6KPhv",
             "game_name": "NFL Universe Football",
             "game_link": "https://www.roblox.com/games/2338325648/SUPER-BOWL-NFL-Universe-Football",
@@ -290,6 +295,7 @@
             "staff_apps_channel_id": 1337467116777111605
         },
         "settings": {
+            "forfeits_allowed": 2,
             "regular_deadline_days": 6,
             "playoff_deadline_days": 2,
             "auto_gametimes": false,
@@ -326,6 +332,7 @@
             "league_full_name": "Providence Basketball League",
             "league_color": "ee652f",
             "league_emoji": "<:pbl:1363223711527731411>",
+            "league_logo": "https://cdn.discordapp.com/emojis/1363223711527731411.png",
             "league_invite": "https://discord.gg/provbl",
             "game_name": "Basketball Legends",
             "game_link": "https://www.roblox.com/games/14259168147/2X-Basketball-Legends",
@@ -407,7 +414,7 @@
             "groups_message_id": 1347632790509981810,
             "bidding_message_id": 1347632793013850233,
             "colors_message_id": 1347632792313266277,
-            "schedule_message_id": 1369667074649227295
+            "schedule_message_id": 1371824456653209701
         },
         "media": {
             "twitter_id": 1345823073894400091,
@@ -424,6 +431,7 @@
             "staff_apps_channel_id": 1347568467464949934
         },
         "settings": {
+            "forfeits_allowed": 2,
             "regular_deadline_days": 6,
             "playoff_deadline_days": 3,
             "auto_gametimes": true,
@@ -460,6 +468,7 @@
             "league_full_name": "Providence Baseball Universe League",
             "league_color": "0094d1",
             "league_emoji": "<:pbul:1364657947594068018>",
+            "league_logo": "https://cdn.discordapp.com/emojis/1364657947594068018.png",
             "league_invite": "https://discord.gg/pbul",
             "game_name": "Baseball Universe",
             "game_link": "https://www.roblox.com/games/132756651286184/Baseball-Universe-9v9",
@@ -540,7 +549,7 @@
             "bidding_message_id": 1365346565090447380,
             "colors_message_id": 1365346563450343619,
             "info_message_id": 1365346560883560458,
-            "schedule_message_id": 1368983986994544681
+            "schedule_message_id": 1371829753899909212
         },
         "media": {
             "twitter_id": 1364650270998663173,
@@ -557,6 +566,7 @@
             "staff_apps_channel_id": 1365342768800727170
         },
         "settings": {
+            "forfeits_allowed": 3,
             "regular_deadline_days": 7,
             "playoff_deadline_days": 3,
             "auto_gametimes": true,

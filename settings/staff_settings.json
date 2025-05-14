@@ -1,0 +1,178 @@
+{
+    "656863051802476548": {
+        "comm": {
+            "role_id": 1281991052378636421,
+            "other_roles": [],
+            "dept": "admins",
+            "dept_display": "Administration",
+            "admin": true,
+            "value": 50
+        },
+        "vicecomm": {
+            "role_id": 1281991017503002674,
+            "other_roles": [],
+            "dept": "admins",
+            "dept_display": "Administration",
+            "admin": true,
+            "value": 49
+        },
+        "exec": {
+            "role_id": 1281990991192264856,
+            "other_roles": [],
+            "dept": "admins",
+            "dept_display": "Administration",
+            "admin": true,
+            "value": 48
+        },
+        "mod_director": {
+            "role_id": 1281991087539486842,
+            "other_roles": [1282764785003270256, 1282764714283106387],
+            "dept": "mod",
+            "dept_display": "Moderation",
+            "admin": true,
+            "value": 40
+        },
+        "mod": {
+            "role_id": 1282764785003270256,
+            "other_roles": [],
+            "dept": "mod",
+            "dept_display": "Moderation",
+            "admin": false,
+            "value": 35
+        },
+        "media_director": {
+            "role_id": 1282765443530100858,
+            "other_roles": [1282765470495146095, 1282764714283106387],
+            "dept": "media",
+            "dept_display": "Media",
+            "admin": true,
+            "value": 40
+        },
+        "media": {
+            "role_id": 1282765470495146095,
+            "other_roles": [],
+            "dept": "media",
+            "dept_display": "Media",
+            "admin": false,
+            "value": 35
+        },
+        "stats_director": {
+            "role_id": 1282764755433554024,
+            "other_roles": [1282764809229570109, 1282764714283106387],
+            "dept": "stats",
+            "dept_display": "Statistics",
+            "admin": true,
+            "value": 40
+        },
+        "stats": {
+            "role_id": 1282764809229570109,
+            "other_roles": [],
+            "dept": "stats",
+            "dept_display": "Statistics",
+            "admin": false,
+            "value": 35
+        },
+        "streamer_director": {
+            "role_id": 1363525522537316533,
+            "other_roles": [1282765520659152940, 1282764714283106387],
+            "dept": "streamer",
+            "dept_display": "Streaming",
+            "admin": true,
+            "value": 40
+        },
+        "streamer": {
+            "role_id": 1282765520659152940,
+            "other_roles": [],
+            "dept": "streamer",
+            "dept_display": "Streaming",
+            "admin": false,
+            "value": 35
+        },
+        "history_director": {
+            "role_id": 1363709859027095612,
+            "other_roles": [1363710278398771433],
+            "dept": "history",
+            "dept_display": "Historian",
+            "admin": true,
+            "value": 40
+        },
+        "history": {
+            "role_id": 1363710278398771433,
+            "other_roles": [],
+            "dept": "history",
+            "dept_display": "Historian",
+            "admin": false,
+            "value": 35
+        },
+        "staff": {
+            "role_id": 1282764734688657569,
+            "other_roles": [],
+            "dept": "staff",
+            "dept_display": "Staff",
+            "admin": false,
+            "value": 1
+        }
+    },
+    "1068670713529106432": {
+        "referee_director": {
+            "role_id": 1281990950373163189,
+            "other_roles": [1282765768555102351, 1282764714283106387],
+            "dept": "referee",
+            "dept_display": "Referee",
+            "admin": true,
+            "value": 40
+        },
+        "referee": {
+            "role_id": 1282765768555102351,
+            "other_roles": [],
+            "dept": "referee",
+            "dept_display": "Referee",
+            "admin": false,
+            "value": 35
+        }
+    },
+    "1240014143784747018": {
+        "referee_director": {
+            "role_id": 1347565600460902482,
+            "other_roles": [1347564708034646089, 1282764714283106387],
+            "dept": "referee",
+            "dept_display": "Referee",
+            "admin": true,
+            "value": 40
+        },
+        "referee": {
+            "role_id": 1347564708034646089,
+            "other_roles": [],
+            "dept": "referee",
+            "dept_display": "Referee",
+            "admin": false,
+            "value": 35
+        },
+        "tier_council": {
+            "role_id": 1363721245258153994,
+            "other_roles": [],
+            "dept": "tier_council",
+            "dept_display": "Tier Council",
+            "admin": false,
+            "value": 36
+        }
+    },
+    "1364650269652025354": {
+        "umpire_director": {
+            "role_id": 1365359590912299031,
+            "other_roles": [1365359417008324638, 1282764714283106387],
+            "dept": "referee",
+            "dept_display": "Umpire",
+            "admin": true,
+            "value": 40
+        },
+        "umpire": {
+            "role_id": 1365359417008324638,
+            "other_roles": [],
+            "dept": "referee",
+            "dept_display": "Umpire",
+            "admin": false,
+            "value": 35
+        }
+    }
+}

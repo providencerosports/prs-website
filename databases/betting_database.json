@@ -1,0 +1,741 @@
+{
+    "1068670713529106432": {
+        "series1": {
+            "Colonels vs Blue Jays": {
+                "team1": "Colonels",
+                "team2": "Blue Jays",
+                "team1_betters": {
+                    "1136033748043976836": 20,
+                    "1292986841733009408": 25,
+                    "923419877669228544": 10,
+                    "1261298560742199407": 15,
+                    "440697222133448704": 10,
+                    "773347090688376872": 12,
+                    "696109037699334164": 10
+                },
+                "team2_betters": {
+                    "573238651954135040": 50,
+                    "930611216064323655": 15,
+                    "1034265690162593882": 45,
+                    "819455098500939787": 40,
+                    "1190192013975507076": 25
+                },
+                "team1_totalbets": 7,
+                "team2_totalbets": 5,
+                "team1_totalbets_amount": 102,
+                "team2_totalbets_amount": 175,
+                "winner": "team1",
+                "winners_paidout": true
+            },
+            "Bulls vs Beasts": {
+                "team1": "Bulls",
+                "team2": "Beasts",
+                "team1_betters": {
+                    "819455098500939787": 1,
+                    "923419877669228544": 10,
+                    "573238651954135040": 75,
+                    "845527387181547580": 600,
+                    "855190581579612190": 15,
+                    "440697222133448704": 10,
+                    "773347090688376872": 10
+                },
+                "team2_betters": {
+                    "930611216064323655": 10,
+                    "1136033748043976836": 20,
+                    "1034265690162593882": 50,
+                    "1335151877519572992": 10,
+                    "994674103657185362": 25,
+                    "1248357379691511811": 10,
+                    "870404072472207431": 100,
+                    "1322417191945244722": 25,
+                    "1261298560742199407": 30,
+                    "1063721702724472862": 25,
+                    "1232321785970688020": 2
+                },
+                "team1_totalbets": 7,
+                "team2_totalbets": 11,
+                "team1_totalbets_amount": 721,
+                "team2_totalbets_amount": 307,
+                "winner": "team1",
+                "winners_paidout": true
+            }
+        },
+        "series2": {
+            "Bulls vs Stallions": {
+                "team1": "Bulls",
+                "team2": "Stallions",
+                "team1_betters": {
+                    "1261298560742199407": 41,
+                    "819455098500939787": 15,
+                    "440697222133448704": 15,
+                    "845527387181547580": 855,
+                    "514197926054985747": 25,
+                    "888216458985885727": 10,
+                    "1145519664391278602": 100,
+                    "744266026350411798": 30,
+                    "1088235045220798535": 25
+                },
+                "team2_betters": {
+                    "573238651954135040": 107,
+                    "693529164304875629": 50
+                },
+                "team1_totalbets": 9,
+                "team2_totalbets": 2,
+                "team1_totalbets_amount": 1116,
+                "team2_totalbets_amount": 157,
+                "winner": null,
+                "winners_paidout": false
+            },
+            "Colonels vs Havoc": {
+                "team1": "Colonels",
+                "team2": "Havoc",
+                "team1_betters": {
+                    "819455098500939787": 250,
+                    "693529164304875629": 50,
+                    "1088235045220798535": 25,
+                    "744266026350411798": 40,
+                    "855190581579612190": 40,
+                    "961017352823128064": 10,
+                    "1356026955207540968": 25,
+                    "1359011087315632202": 25
+                },
+                "team2_betters": {
+                    "573238651954135040": 107
+                },
+                "team1_totalbets": 8,
+                "team2_totalbets": 1,
+                "team1_totalbets_amount": 465,
+                "team2_totalbets_amount": 107,
+                "winner": "team1",
+                "winners_paidout": true
+            },
+            "Admirals vs Blue Jays": {
+                "team1": "Admirals",
+                "team2": "Blue Jays",
+                "team1_betters": {
+                    "597862220117966850": 5,
+                    "819455098500939787": 10,
+                    "440697222133448704": 20,
+                    "815678254764916772": 25,
+                    "693529164304875629": 200
+                },
+                "team2_betters": {
+                    "1331046199347773511": 10
+                },
+                "team1_totalbets": 5,
+                "team2_totalbets": 1,
+                "team1_totalbets_amount": 260,
+                "team2_totalbets_amount": 10,
+                "winner": "team2",
+                "winners_paidout": true
+            }
+        },
+        "series3": {
+            "Colonels vs Admirals": {
+                "team1": "Colonels",
+                "team2": "Admirals",
+                "team1_betters": {
+                    "472094595027566592": 10
+                },
+                "team2_betters": {},
+                "team1_totalbets": 1,
+                "team2_totalbets": 0,
+                "team1_totalbets_amount": 10,
+                "team2_totalbets_amount": 0,
+                "winner": "team1",
+                "winners_paidout": true
+            },
+            "Dire Wolves vs Blue Jays": {
+                "team1": "Dire Wolves",
+                "team2": "Blue Jays",
+                "team1_betters": {},
+                "team2_betters": {
+                    "696109037699334164": 40,
+                    "472094595027566592": 15,
+                    "440697222133448704": 12,
+                    "1149738971136532571": 15
+                },
+                "team1_totalbets": 0,
+                "team2_totalbets": 4,
+                "team1_totalbets_amount": 0,
+                "team2_totalbets_amount": 82,
+                "winner": null,
+                "winners_paidout": false
+            },
+            "Outlaws vs Natives": {
+                "team1": "Outlaws",
+                "team2": "Natives",
+                "team1_betters": {
+                    "804513758960418877": 25,
+                    "1164362957157826580": 25,
+                    "855190581579612190": 50,
+                    "845527387181547580": 855,
+                    "440697222133448704": 13,
+                    "1261298560742199407": 41,
+                    "1149738971136532571": 10,
+                    "1012491510178123796": 15
+                },
+                "team2_betters": {
+                    "573238651954135040": 25,
+                    "930611216064323655": 25,
+                    "332653735170015233": 300,
+                    "472094595027566592": 10
+                },
+                "team1_totalbets": 8,
+                "team2_totalbets": 4,
+                "team1_totalbets_amount": 1034,
+                "team2_totalbets_amount": 360,
+                "winner": null,
+                "winners_paidout": false
+            }
+        },
+        "series4": {
+            "Strikers vs Colonels": {
+                "team1": "Strikers",
+                "team2": "Colonels",
+                "team1_betters": {
+                    "472094595027566592": 10
+                },
+                "team2_betters": {
+                    "930155213032153158": 20,
+                    "1149738971136532571": 35
+                },
+                "team1_totalbets": 1,
+                "team2_totalbets": 2,
+                "team1_totalbets_amount": 10,
+                "team2_totalbets_amount": 55,
+                "winner": "team2",
+                "winners_paidout": true
+            },
+            "Tigers vs Natives": {
+                "team1": "Tigers",
+                "team2": "Natives",
+                "team1_betters": {
+                    "472094595027566592": 10,
+                    "1261298560742199407": 50
+                },
+                "team2_betters": {},
+                "team1_totalbets": 2,
+                "team2_totalbets": 0,
+                "team1_totalbets_amount": 60,
+                "team2_totalbets_amount": 0,
+                "winner": "team1",
+                "winners_paidout": true
+            },
+            "Blue Jays vs Ducks": {
+                "team1": "Blue Jays",
+                "team2": "Ducks",
+                "team1_betters": {
+                    "1149738971136532571": 20
+                },
+                "team2_betters": {
+                    "472094595027566592": 10
+                },
+                "team1_totalbets": 1,
+                "team2_totalbets": 1,
+                "team1_totalbets_amount": 20,
+                "team2_totalbets_amount": 10,
+                "winner": "team1",
+                "winners_paidout": true
+            }
+        },
+        "series5": {
+            "Blue Jays vs Nightcrawlers": {
+                "team1": "Blue Jays",
+                "team2": "Nightcrawlers",
+                "team1_betters": {
+                    "1149738971136532571": 50
+                },
+                "team2_betters": {},
+                "team1_totalbets": 1,
+                "team2_totalbets": 0,
+                "team1_totalbets_amount": 50,
+                "team2_totalbets_amount": 0,
+                "winner": "team1",
+                "winners_paidout": true
+            },
+            "Outlaws vs Blackjacks": {
+                "team1": "Outlaws",
+                "team2": "Blackjacks",
+                "team1_betters": {
+                    "534569646838382592": 100,
+                    "855190581579612190": 100,
+                    "1149738971136532571": 50,
+                    "819455098500939787": 44,
+                    "702284065243529337": 25,
+                    "795311903966625792": 25,
+                    "1360377701676089425": 10,
+                    "871892821408358430": 25,
+                    "1334627872765378560": 25,
+                    "1297339225414434868": 15
+                },
+                "team2_betters": {
+                    "896501103267577887": 25
+                },
+                "team1_totalbets": 10,
+                "team2_totalbets": 1,
+                "team1_totalbets_amount": 419,
+                "team2_totalbets_amount": 25,
+                "winner": "team1",
+                "winners_paidout": true
+            },
+            "Bulls vs Billies": {
+                "team1": "Bulls",
+                "team2": "Billies",
+                "team1_betters": {
+                    "817113391202172961": 25
+                },
+                "team2_betters": {
+                    "1332838319519957033": 25
+                },
+                "team1_totalbets": 1,
+                "team2_totalbets": 1,
+                "team1_totalbets_amount": 25,
+                "team2_totalbets_amount": 25,
+                "winner": "team1",
+                "winners_paidout": true
+            },
+            "Natives vs Dire Wolves": {
+                "team1": "Natives",
+                "team2": "Dire Wolves",
+                "team1_betters": {},
+                "team2_betters": {
+                    "1071930647016374313": 25
+                },
+                "team1_totalbets": 0,
+                "team2_totalbets": 1,
+                "team1_totalbets_amount": 0,
+                "team2_totalbets_amount": 25,
+                "winner": "team1",
+                "winners_paidout": true
+            },
+            "Colonels vs Ducks": {
+                "team1": "Colonels",
+                "team2": "Ducks",
+                "team1_betters": {
+                    "1052752239850160259": 25,
+                    "819455098500939787": 30
+                },
+                "team2_betters": {},
+                "team1_totalbets": 2,
+                "team2_totalbets": 0,
+                "team1_totalbets_amount": 55,
+                "team2_totalbets_amount": 0,
+                "winner": "team1",
+                "winners_paidout": true
+            },
+            "Strikers vs Havoc": {
+                "team1": "Strikers",
+                "team2": "Havoc",
+                "team1_betters": {
+                    "819455098500939787": 125,
+                    "1363761473955823666": 25,
+                    "601541630389911552": 25
+                },
+                "team2_betters": {
+                    "440697222133448704": 30
+                },
+                "team1_totalbets": 3,
+                "team2_totalbets": 1,
+                "team1_totalbets_amount": 175,
+                "team2_totalbets_amount": 30,
+                "winner": "team1",
+                "winners_paidout": true
+            },
+            "Admirals vs Raccoons": {
+                "team1": "Admirals",
+                "team2": "Raccoons",
+                "team1_betters": {
+                    "972924615099818004": 25,
+                    "1261298560742199407": 80
+                },
+                "team2_betters": {
+                    "819455098500939787": 150,
+                    "1147557613932912721": 10,
+                    "927062550393290762": 25
+                },
+                "team1_totalbets": 2,
+                "team2_totalbets": 3,
+                "team1_totalbets_amount": 105,
+                "team2_totalbets_amount": 185,
+                "winner": "team1",
+                "winners_paidout": true
+            },
+            "Tigers vs Stallions": {
+                "team1": "Tigers",
+                "team2": "Stallions",
+                "team1_betters": {},
+                "team2_betters": {},
+                "team1_totalbets": 0,
+                "team2_totalbets": 0,
+                "team1_totalbets_amount": 0,
+                "team2_totalbets_amount": 0,
+                "winner": null,
+                "winners_paidout": false
+            },
+            "Bulls vs Strikers": {
+                "team1": "Bulls",
+                "team2": "Strikers",
+                "team1_betters": {},
+                "team2_betters": {},
+                "team1_totalbets": 0,
+                "team2_totalbets": 0,
+                "team1_totalbets_amount": 0,
+                "team2_totalbets_amount": 0,
+                "winner": "team1",
+                "winners_paidout": true
+            },
+            "Outlaws vs Colonels": {
+                "team1": "Outlaws",
+                "team2": "Colonels",
+                "team1_betters": {},
+                "team2_betters": {},
+                "team1_totalbets": 0,
+                "team2_totalbets": 0,
+                "team1_totalbets_amount": 0,
+                "team2_totalbets_amount": 0,
+                "winner": null,
+                "winners_paidout": false
+            },
+            "Blue Jays vs Tigers": {
+                "team1": "Blue Jays",
+                "team2": "Tigers",
+                "team1_betters": {
+                    "1147557613932912721": 30,
+                    "888216458985885727": 25,
+                    "1149738971136532571": 30
+                },
+                "team2_betters": {},
+                "team1_totalbets": 3,
+                "team2_totalbets": 0,
+                "team1_totalbets_amount": 85,
+                "team2_totalbets_amount": 0,
+                "winner": "team1",
+                "winners_paidout": true
+            },
+            "Natives vs Admirals": {
+                "team1": "Natives",
+                "team2": "Admirals",
+                "team1_betters": {},
+                "team2_betters": {},
+                "team1_totalbets": 0,
+                "team2_totalbets": 0,
+                "team1_totalbets_amount": 0,
+                "team2_totalbets_amount": 0,
+                "winner": null,
+                "winners_paidout": false
+            },
+            "Outlaws vs Admirals": {
+                "team1": "Outlaws",
+                "team2": "Admirals",
+                "team1_betters": {
+                    "1149738971136532571": 10
+                },
+                "team2_betters": {},
+                "team1_totalbets": 1,
+                "team2_totalbets": 0,
+                "team1_totalbets_amount": 10,
+                "team2_totalbets_amount": 0,
+                "winner": "team1",
+                "winners_paidout": true
+            },
+            "Natives vs Colonels": {
+                "team1": "Natives",
+                "team2": "Colonels",
+                "team1_betters": {},
+                "team2_betters": {},
+                "team1_totalbets": 0,
+                "team2_totalbets": 0,
+                "team1_totalbets_amount": 0,
+                "team2_totalbets_amount": 0,
+                "winner": "team2",
+                "winners_paidout": true
+            },
+            "Blue Jays vs Colonels": {
+                "team1": "Blue Jays",
+                "team2": "Colonels",
+                "team1_betters": {},
+                "team2_betters": {
+                    "991517551186169917": 25
+                },
+                "team1_totalbets": 0,
+                "team2_totalbets": 1,
+                "team1_totalbets_amount": 0,
+                "team2_totalbets_amount": 25,
+                "winner": "team1",
+                "winners_paidout": true
+            },
+            "Outlaws vs Bulls": {
+                "team1": "Outlaws",
+                "team2": "Bulls",
+                "team1_betters": {
+                    "888216458985885727": 25,
+                    "845527387181547580": 1710,
+                    "1145519664391278602": 100,
+                    "961017352823128064": 27,
+                    "855190581579612190": 106
+                },
+                "team2_betters": {},
+                "team1_totalbets": 5,
+                "team2_totalbets": 0,
+                "team1_totalbets_amount": 1968,
+                "team2_totalbets_amount": 0,
+                "winner": "team2",
+                "winners_paidout": true
+            },
+            "Blue Jays vs Bulls": {
+                "team1": "Blue Jays",
+                "team2": "Bulls",
+                "team1_betters": {},
+                "team2_betters": {},
+                "team1_totalbets": 0,
+                "team2_totalbets": 0,
+                "team1_totalbets_amount": 0,
+                "team2_totalbets_amount": 0,
+                "winner": null,
+                "winners_paidout": false
+            }
+        }
+    },
+    "1318677095798411294": {
+        "series1": {},
+        "series2": {},
+        "series3": {},
+        "series4": {},
+        "series5": {
+            "Chiefs vs Ravens": {
+                "team1": "Chiefs",
+                "team2": "Ravens",
+                "team1_betters": {
+                    "573238651954135040": 25
+                },
+                "team2_betters": {},
+                "team1_totalbets": 1,
+                "team2_totalbets": 0,
+                "team1_totalbets_amount": 25,
+                "team2_totalbets_amount": 0,
+                "winner": null,
+                "winners_paidout": false
+            },
+            "Chiefs vs Eagles": {
+                "team1": "Chiefs",
+                "team2": "Eagles",
+                "team1_betters": {
+                    "573238651954135040": 25
+                },
+                "team2_betters": {},
+                "team1_totalbets": 1,
+                "team2_totalbets": 0,
+                "team1_totalbets_amount": 25,
+                "team2_totalbets_amount": 0,
+                "winner": null,
+                "winners_paidout": false
+            }
+        }
+    },
+    "1240014143784747018": {
+        "series1": {
+            "Knicks vs Thunder": {
+                "team1": "Knicks",
+                "team2": "Thunder",
+                "team1_betters": {
+                    "573238651954135040": 25,
+                    "526144913516003358": 25
+                },
+                "team2_betters": {},
+                "team1_totalbets": 2,
+                "team2_totalbets": 0,
+                "team1_totalbets_amount": 50,
+                "team2_totalbets_amount": 0,
+                "winner": "team1",
+                "winners_paidout": true
+            },
+            "Celtics vs Lakers": {
+                "team1": "Celtics",
+                "team2": "Lakers",
+                "team1_betters": {},
+                "team2_betters": {},
+                "team1_totalbets": 0,
+                "team2_totalbets": 0,
+                "team1_totalbets_amount": 0,
+                "team2_totalbets_amount": 0,
+                "winner": null,
+                "winners_paidout": false
+            },
+            "Cavaliers vs Bucks": {
+                "team1": "Cavaliers",
+                "team2": "Bucks",
+                "team1_betters": {},
+                "team2_betters": {},
+                "team1_totalbets": 0,
+                "team2_totalbets": 0,
+                "team1_totalbets_amount": 0,
+                "team2_totalbets_amount": 0,
+                "winner": null,
+                "winners_paidout": false
+            }
+        },
+        "series2": {
+            "Celtics vs Knicks": {
+                "team1": "Celtics",
+                "team2": "Knicks",
+                "team1_betters": {},
+                "team2_betters": {},
+                "team1_totalbets": 0,
+                "team2_totalbets": 0,
+                "team1_totalbets_amount": 0,
+                "team2_totalbets_amount": 0,
+                "winner": "team2",
+                "winners_paidout": true
+            },
+            "Clippers vs Thunder": {
+                "team1": "Clippers",
+                "team2": "Thunder",
+                "team1_betters": {},
+                "team2_betters": {},
+                "team1_totalbets": 0,
+                "team2_totalbets": 0,
+                "team1_totalbets_amount": 0,
+                "team2_totalbets_amount": 0,
+                "winner": null,
+                "winners_paidout": false
+            },
+            "Pacers vs Grizzlies": {
+                "team1": "Pacers",
+                "team2": "Grizzlies",
+                "team1_betters": {},
+                "team2_betters": {},
+                "team1_totalbets": 0,
+                "team2_totalbets": 0,
+                "team1_totalbets_amount": 0,
+                "team2_totalbets_amount": 0,
+                "winner": "team1",
+                "winners_paidout": true
+            }
+        },
+        "series3": {
+            "Knicks vs Lakers": {
+                "team1": "Knicks",
+                "team2": "Lakers",
+                "team1_betters": {},
+                "team2_betters": {},
+                "team1_totalbets": 0,
+                "team2_totalbets": 0,
+                "team1_totalbets_amount": 0,
+                "team2_totalbets_amount": 0,
+                "winner": "team1",
+                "winners_paidout": true
+            },
+            "Knicks vs Warriors": {
+                "team1": "Knicks",
+                "team2": "Warriors",
+                "team1_betters": {},
+                "team2_betters": {},
+                "team1_totalbets": 0,
+                "team2_totalbets": 0,
+                "team1_totalbets_amount": 0,
+                "team2_totalbets_amount": 0,
+                "winner": null,
+                "winners_paidout": false
+            },
+            "Knicks vs Pacers": {
+                "team1": "Knicks",
+                "team2": "Pacers",
+                "team1_betters": {},
+                "team2_betters": {},
+                "team1_totalbets": 0,
+                "team2_totalbets": 0,
+                "team1_totalbets_amount": 0,
+                "team2_totalbets_amount": 0,
+                "winner": null,
+                "winners_paidout": false
+            },
+            "Warriors vs Lakers": {
+                "team1": "Warriors",
+                "team2": "Lakers",
+                "team1_betters": {},
+                "team2_betters": {},
+                "team1_totalbets": 0,
+                "team2_totalbets": 0,
+                "team1_totalbets_amount": 0,
+                "team2_totalbets_amount": 0,
+                "winner": null,
+                "winners_paidout": false
+            },
+            "Warriors vs Pacers": {
+                "team1": "Warriors",
+                "team2": "Pacers",
+                "team1_betters": {},
+                "team2_betters": {},
+                "team1_totalbets": 0,
+                "team2_totalbets": 0,
+                "team1_totalbets_amount": 0,
+                "team2_totalbets_amount": 0,
+                "winner": null,
+                "winners_paidout": false
+            }
+        },
+        "series4": {
+            "Knicks vs Celtics": {
+                "team1": "Knicks",
+                "team2": "Celtics",
+                "team1_betters": {},
+                "team2_betters": {},
+                "team1_totalbets": 0,
+                "team2_totalbets": 0,
+                "team1_totalbets_amount": 0,
+                "team2_totalbets_amount": 0,
+                "winner": null,
+                "winners_paidout": false
+            },
+            "Pacers vs Grizzlies": {
+                "team1": "Pacers",
+                "team2": "Grizzlies",
+                "team1_betters": {},
+                "team2_betters": {},
+                "team1_totalbets": 0,
+                "team2_totalbets": 0,
+                "team1_totalbets_amount": 0,
+                "team2_totalbets_amount": 0,
+                "winner": null,
+                "winners_paidout": false
+            }
+        },
+        "series5": {}
+    },
+    "1364650269652025354": {
+        "series1": {
+            "Vikings vs Tigers": {
+                "team1": "Vikings",
+                "team2": "Tigers",
+                "team1_betters": {
+                    "1130911988160151572": 25
+                },
+                "team2_betters": {},
+                "team1_totalbets": 1,
+                "team2_totalbets": 0,
+                "team1_totalbets_amount": 25,
+                "team2_totalbets_amount": 0,
+                "winner": null,
+                "winners_paidout": false
+            }
+        },
+        "series2": {
+            "Aces vs Spartans": {
+                "team1": "Aces",
+                "team2": "Spartans",
+                "team1_betters": {},
+                "team2_betters": {},
+                "team1_totalbets": 0,
+                "team2_totalbets": 0,
+                "team1_totalbets_amount": 0,
+                "team2_totalbets_amount": 0,
+                "winner": "team1",
+                "winners_paidout": true
+            }
+        },
+        "series3": {},
+        "series4": {},
+        "series5": {}
+    }
+}

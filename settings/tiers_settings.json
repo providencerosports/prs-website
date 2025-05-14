@@ -1,0 +1,68 @@
+{
+    "1068670713529106432": {
+        "tiers_enabled": false,
+        "max_tier_points": 18,
+        "tiers": {
+            "tieri": {
+                "role_id": 0,
+                "points": 10
+            },
+            "tierii": {
+                "role_id": 0,
+                "points": 5
+            },
+            "tieriii": {
+                "role_id": 0,
+                "points": 1.5
+            },
+            "tieriv": {
+                "role_id": 0,
+                "points": 0
+            }
+        }
+    },
+    "1240014143784747018": {
+        "tiers_enabled": true,
+        "max_tier_points": 18,
+        "tiers": {
+            "tieri": {
+                "role_id": 1363881772332482570,
+                "points": 10
+            },
+            "tierii": {
+                "role_id": 1363881929769750769,
+                "points": 5
+            },
+            "tieriii": {
+                "role_id": 1363882051865935952,
+                "points": 1.5
+            },
+            "tieriv": {
+                "role_id": 1363882192849076356,
+                "points": 0
+            }
+        }
+    },
+    "1364650269652025354": {
+        "tiers_enabled": false,
+        "max_tier_points": 18,
+        "tiers": {
+            "tieri": {
+                "role_id": 0,
+                "points": 10
+            },
+            "tierii": {
+                "role_id": 0,
+                "points": 5
+            },
+            "tieriii": {
+                "role_id": 0,
+                "points": 1.5
+            },
+            "tieriv": {
+                "role_id": 0,
+                "points": 0
+            }
+        }
+    }
+}

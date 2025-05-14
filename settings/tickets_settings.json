@@ -1,0 +1,330 @@
+{
+    "1068670713529106432": {
+        "Verification": {
+            "prefix": "VFY",
+            "emoji": "\u2705",
+            "logo": "https://static-00.iconduck.com/assets.00/check-mark-button-emoji-2048x2048-lq7rf7h8.png",
+            "description": "For help verifying your Roblox account or your Discord account.",
+            "color": "4CAF50",
+            "depts": [
+                "staff"
+            ]
+        },
+        "Challenge": {
+            "prefix": "CHL",
+            "emoji": "\ud83c\udfc1",
+            "logo": "https://static-00.iconduck.com/assets.00/chequered-flag-emoji-465x512-pmjpx1wg.png",
+            "description": "To challenge a play or call in-game. Not for challenging anything outside an active game.",
+            "color": "808080",
+            "depts": [
+                "referee"
+            ]
+        },
+        "Referee": {
+            "prefix": "REF",
+            "emoji": "🏁",
+            "logo": "https://static-00.iconduck.com/assets.00/chequered-flag-emoji-465x512-pmjpx1wg.png",
+            "description": "To report a player for something that is against league rules or our policies. Should not be used for moderation issues.",
+            "color": "D4AF37",
+            "depts": [
+                "referee"
+            ]
+        },
+        "Franchise": {
+            "prefix": "FRC",
+            "emoji": "\ud83c\udfdf\ufe0f",
+            "logo": "https://static-00.iconduck.com/assets.00/stadium-emoji-2048x1842-j733qbs0.png",
+            "description": "For any issues regarding a team or its ownership. Requesting a gametime force, disbanding, or other ownership related questions should be done here.",
+            "color": "4CAF50",
+            "depts": [
+                "referee"
+            ]
+        },
+        "Moderation": {
+            "prefix": "MOD",
+            "emoji": "\ud83d\udee1\ufe0f",
+            "logo": "https://assets.streamlinehq.com/image/private/w_512,h_512,ar_1/f_auto/v1/icons/3/shield-6r6i0c65c9scqt0avcddwv.png/shield-ye515befcpdbaw1rfak95.png?_a=DAJFJtWIZAAC",
+            "description": "For any issues occurring in our Discord server. Not for any franchise/in-game issues.",
+            "color": "B0B0B0",
+            "depts": [
+                "mod"
+            ]
+        },
+        "Statistics": {
+            "prefix": "STS",
+            "emoji": "\ud83d\udcca",
+            "logo": "https://images.emojiterra.com/twitter/v13.1/512px/1f4ca.png",
+            "description": "For any inquiries or issues about stats or stats submission. Do not make a ticket to ask when we are going to enter your stats unless it has been 48+ hours.",
+            "color": "2196F3",
+            "depts": [
+                "stats"
+            ]
+        },
+        "History": {
+            "prefix": "HST",
+            "emoji": "\ud83d\udcdc",
+            "logo": "https://static-00.iconduck.com/assets.00/scroll-emoji-2048x2048-9u8b57kc.png",
+            "description": "Report any issues with the league's history channel. Could be incorrect information, or just a question about something.",
+            "color": "FFDA84",
+            "depts": [
+                "history"
+            ]
+        },
+        "Paid Promotions": {
+            "prefix": "PRM",
+            "emoji": "\ud83d\udcb5",
+            "logo": "https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f4b5.png",
+            "description": "To purchase a paid promotion or offer a partnership. Price will depend on which league you are requesting for. For unpaid partnerships, your server must be of similar size to ours.",
+            "color": "4CAF50",
+            "depts": [
+                "admins"
+            ]
+        }
+    },
+    "1318677095798411294": {
+        "Verification": {
+            "prefix": "VFY",
+            "emoji": "\u2705",
+            "logo": "https://static-00.iconduck.com/assets.00/check-mark-button-emoji-2048x2048-lq7rf7h8.png",
+            "description": "For help verifying your Roblox account or your Discord account.",
+            "color": "4CAF50",
+            "depts": [
+                "staff"
+            ]
+        },
+        "Challenge": {
+            "prefix": "CHL",
+            "emoji": "\ud83c\udfc1",
+            "logo": "https://static-00.iconduck.com/assets.00/chequered-flag-emoji-465x512-pmjpx1wg.png",
+            "description": "To challenge a play or call in-game. Not for challenging anything outside an active game.",
+            "color": "808080",
+            "depts": [
+                "referee"
+            ]
+        },
+        "Referee": {
+            "prefix": "REF",
+            "emoji": "🏁",
+            "logo": "https://static-00.iconduck.com/assets.00/chequered-flag-emoji-465x512-pmjpx1wg.png",
+            "description": "To report a player for something that is against league rules or our policies. Should not be used for moderation issues.",
+            "color": "D4AF37",
+            "depts": [
+                "referee"
+            ]
+        },
+        "Franchise": {
+            "prefix": "FRC",
+            "emoji": "\ud83c\udfdf\ufe0f",
+            "logo": "https://static-00.iconduck.com/assets.00/stadium-emoji-2048x1842-j733qbs0.png",
+            "description": "For any issues regarding a team or its ownership. Requesting a gametime force, disbanding, or other ownership related questions should be done here.",
+            "color": "4CAF50",
+            "depts": [
+                "referee"
+            ]
+        },
+        "Moderation": {
+            "prefix": "MOD",
+            "emoji": "\ud83d\udee1\ufe0f",
+            "logo": "https://assets.streamlinehq.com/image/private/w_512,h_512,ar_1/f_auto/v1/icons/3/shield-6r6i0c65c9scqt0avcddwv.png/shield-ye515befcpdbaw1rfak95.png?_a=DAJFJtWIZAAC",
+            "description": "For any issues occurring in our Discord server. Not for any franchise/in-game issues.",
+            "color": "B0B0B0",
+            "depts": [
+                "mod"
+            ]
+        },
+        "Statistics": {
+            "prefix": "STS",
+            "emoji": "\ud83d\udcca",
+            "logo": "https://images.emojiterra.com/twitter/v13.1/512px/1f4ca.png",
+            "description": "For any inquiries or issues about stats or stats submission. Do not make a ticket to ask when we are going to enter your stats unless it has been 48+ hours.",
+            "color": "2196F3",
+            "depts": [
+                "stats"
+            ]
+        },
+        "History": {
+            "prefix": "HST",
+            "emoji": "\ud83d\udcdc",
+            "logo": "https://static-00.iconduck.com/assets.00/scroll-emoji-2048x2048-9u8b57kc.png",
+            "description": "Report any issues with the league's history channel. Could be incorrect information, or just a question about something.",
+            "color": "FFDA84",
+            "depts": [
+                "history"
+            ]
+        },
+        "Paid Promotions": {
+            "prefix": "PRM",
+            "emoji": "\ud83d\udcb5",
+            "logo": "https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f4b5.png",
+            "description": "To purchase a paid promotion or offer a partnership. Price will depend on which league you are requesting for. For unpaid partnerships, your server must be of similar size to ours.",
+            "color": "4CAF50",
+            "depts": [
+                "admins"
+            ]
+        }
+    },
+    "1240014143784747018": {
+        "Verification": {
+            "prefix": "VFY",
+            "emoji": "\u2705",
+            "logo": "https://static-00.iconduck.com/assets.00/check-mark-button-emoji-2048x2048-lq7rf7h8.png",
+            "description": "For help verifying your Roblox account or your Discord account.",
+            "color": "4CAF50",
+            "depts": [
+                "staff"
+            ]
+        },
+        "Challenge": {
+            "prefix": "CHL",
+            "emoji": "\ud83c\udfc1",
+            "logo": "https://static-00.iconduck.com/assets.00/chequered-flag-emoji-465x512-pmjpx1wg.png",
+            "description": "To challenge a play or call in-game. Not for challenging anything outside an active game.",
+            "color": "808080",
+            "depts": [
+                "referee"
+            ]
+        },
+        "Referee": {
+            "prefix": "REF",
+            "emoji": "🏁",
+            "logo": "https://static-00.iconduck.com/assets.00/chequered-flag-emoji-465x512-pmjpx1wg.png",
+            "description": "To report a player for something that is against league rules or our policies. Should not be used for moderation issues.",
+            "color": "D4AF37",
+            "depts": [
+                "referee"
+            ]
+        },
+        "Franchise": {
+            "prefix": "FRC",
+            "emoji": "\ud83c\udfdf\ufe0f",
+            "logo": "https://static-00.iconduck.com/assets.00/stadium-emoji-2048x1842-j733qbs0.png",
+            "description": "For any issues regarding a team or its ownership. Requesting a gametime force, disbanding, or other ownership related questions should be done here.",
+            "color": "4CAF50",
+            "depts": [
+                "referee"
+            ]
+        },
+        "Moderation": {
+            "prefix": "MOD",
+            "emoji": "\ud83d\udee1\ufe0f",
+            "logo": "https://assets.streamlinehq.com/image/private/w_512,h_512,ar_1/f_auto/v1/icons/3/shield-6r6i0c65c9scqt0avcddwv.png/shield-ye515befcpdbaw1rfak95.png?_a=DAJFJtWIZAAC",
+            "description": "For any issues occurring in our Discord server. Not for any franchise/in-game issues.",
+            "color": "B0B0B0",
+            "depts": [
+                "mod"
+            ]
+        },
+        "Statistics": {
+            "prefix": "STS",
+            "emoji": "\ud83d\udcca",
+            "logo": "https://images.emojiterra.com/twitter/v13.1/512px/1f4ca.png",
+            "description": "For any inquiries or issues about stats or stats submission. Do not make a ticket to ask when we are going to enter your stats unless it has been 48+ hours.",
+            "color": "2196F3",
+            "depts": [
+                "stats"
+            ]
+        },
+        "Tier Inquiry": {
+            "prefix": "TRI",
+            "emoji": "\ud83c\udfdb\ufe0f",
+            "logo": "https://static-00.iconduck.com/assets.00/classical-building-emoji-2048x1991-rjd5myg1.png",
+            "description": "Report any issues with tiers here, including if you believe you were given the wrong tier, or a player has not been given the correct tier",
+            "color": "ee652f",
+            "depts": [
+                "tier_council"
+            ]
+        },
+        "History": {
+            "prefix": "HST",
+            "emoji": "\ud83d\udcdc",
+            "logo": "https://static-00.iconduck.com/assets.00/scroll-emoji-2048x2048-9u8b57kc.png",
+            "description": "Report any issues with the league's history channel. Could be incorrect information, or just a question about something.",
+            "color": "FFDA84",
+            "depts": [
+                "history"
+            ]
+        },
+        "Paid Promotions": {
+            "prefix": "PRM",
+            "emoji": "\ud83d\udcb5",
+            "logo": "https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f4b5.png",
+            "description": "To purchase a paid promotion or offer a partnership. Price will depend on which league you are requesting for. For unpaid partnerships, your server must be of similar size to ours.",
+            "color": "4CAF50",
+            "depts": [
+                "admins"
+            ]
+        }
+    },
+    "1364650269652025354": {
+        "Verification": {
+            "prefix": "VFY",
+            "emoji": "\u2705",
+            "logo": "https://static-00.iconduck.com/assets.00/check-mark-button-emoji-2048x2048-lq7rf7h8.png",
+            "description": "For help verifying your Roblox account or your Discord account.",
+            "color": "4CAF50",
+            "depts": [
+                "staff"
+            ]
+        },
+        "Challenge": {
+            "prefix": "CHL",
+            "emoji": "\ud83c\udfc1",
+            "logo": "https://static-00.iconduck.com/assets.00/chequered-flag-emoji-465x512-pmjpx1wg.png",
+            "description": "To challenge a play or call in-game. Not for challenging anything outside an active game.",
+            "color": "808080",
+            "depts": [
+                "referee"
+            ]
+        },
+        "Umpire": {
+            "prefix": "UMP",
+            "emoji": "🏁",
+            "logo": "https://static-00.iconduck.com/assets.00/chequered-flag-emoji-465x512-pmjpx1wg.png",
+            "description": "To report a player for something that is against league rules or our policies. Should not be used for moderation issues.",
+            "color": "D4AF37",
+            "depts": [
+                "referee"
+            ]
+        },
+        "Franchise": {
+            "prefix": "FRC",
+            "emoji": "\ud83c\udfdf\ufe0f",
+            "logo": "https://static-00.iconduck.com/assets.00/stadium-emoji-2048x1842-j733qbs0.png",
+            "description": "For any issues regarding a team or its ownership. Requesting a gametime force, disbanding, or other ownership related questions should be done here.",
+            "color": "4CAF50",
+            "depts": [
+                "referee"
+            ]
+        },
+        "Moderation": {
+            "prefix": "MOD",
+            "emoji": "\ud83d\udee1\ufe0f",
+            "logo": "https://assets.streamlinehq.com/image/private/w_512,h_512,ar_1/f_auto/v1/icons/3/shield-6r6i0c65c9scqt0avcddwv.png/shield-ye515befcpdbaw1rfak95.png?_a=DAJFJtWIZAAC",
+            "description": "For any issues occurring in our Discord server. Not for any franchise/in-game issues.",
+            "color": "B0B0B0",
+            "depts": [
+                "mod"
+            ]
+        },
+        "Statistics": {
+            "prefix": "STS",
+            "emoji": "\ud83d\udcca",
+            "logo": "https://images.emojiterra.com/twitter/v13.1/512px/1f4ca.png",
+            "description": "For any inquiries or issues about stats or stats submission. Do not make a ticket to ask when we are going to enter your stats unless it has been 48+ hours.",
+            "color": "2196F3",
+            "depts": [
+                "stats"
+            ]
+        },
+        "Paid Promotions": {
+            "prefix": "PRM",
+            "emoji": "\ud83d\udcb5",
+            "logo": "https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f4b5.png",
+            "description": "To purchase a paid promotion or offer a partnership. Price will depend on which league you are requesting for. For unpaid partnerships, your server must be of similar size to ours.",
+            "color": "4CAF50",
+            "depts": [
+                "admins"
+            ]
+        }
+    }
+}

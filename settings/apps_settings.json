@@ -1,0 +1,316 @@
+{
+    "656863051802476548": {
+        "staff_apps_options": {
+            "Moderation": {
+                "emoji": "\ud83d\udee1\ufe0f",
+                "logo": "https://assets.streamlinehq.com/image/private/w_512,h_512,ar_1/f_auto/v1/icons/3/shield-6r6i0c65c9scqt0avcddwv.png/shield-ye515befcpdbaw1rfak95.png?_a=DAJFJtWIZAAC",
+                "description": "The Moderation team works to moderate our Discord server, keeping harmful content out and making sure our league is a welcoming community",
+                "questions": [
+                    "Why do you want to become a moderator?",
+                    "What experience do you have moderating in other servers?",
+                    "How do you handle conflicts between users?",
+                    "What is the most important quality in a moderator?",
+                    "Would you mute someone because you believe they are not being respectul of you?",
+                    "If someone was spamming, how long would you mute them?",
+                    "Is it doxxing to send a picture of someone that they obtained from the person themselves?",
+                    "How active are you in our league chats?"
+                ]
+            },
+            "Streamer": {
+                "emoji": "\ud83c\udfa5",
+                "logo": "https://cdn.creazilla.com/emojis/52805/movie-camera-emoji-clipart-xl.png",
+                "description": "Our Streaming team is responsible for streaming the most anticipated matchups in our league",
+                "questions": [
+                    "How long have you been streaming for?",
+                    "List all leagues you have streamed in",
+                    "Do you have any custom graphics? (Scoreboards, animations, etc.)",
+                    "How active are you?",
+                    "Please submit all socials that you stream on so we can review your past work."
+                ]
+            },
+            "Statistics": {
+                "emoji": "\ud83d\udcca",
+                "logo": "https://images.emojiterra.com/twitter/v13.1/512px/1f4ca.png",
+                "description": "The Statistics department is responsible for inputting all of the statistics from submitted games",
+                "questions": [
+                    "Why are you interested in joining our statistics team?",
+                    "What experience do you have entering statistics?",
+                    "What would you do if a player complained that their stats had not been entered?",
+                    "How would you respond if one of your friends asked you to input false stats to help them out?"
+                ]
+            },
+            "Media": {
+                "emoji": "\ud83d\udcf8",
+                "logo": "https://cdn.creazilla.com/emojis/53918/camera-with-flash-emoji-clipart-xl.png",
+                "description": "The Media department is responsible for our graphic arts, social media presence, and other media outputs from the league",
+                "questions": [
+                    "First and most importantly, you do understand this isn't an application for a media channel or anything league-media related?",
+                    "What is your skill set or skill sets? (Ex: GFX, video editing)",
+                    "Why are you interested in joining our media team?",
+                    "What are some ideas you have for our social media presence?"
+                ]
+            },
+            "History": {
+                "emoji": "📜",
+                "logo": "https://static-00.iconduck.com/assets.00/scroll-emoji-2048x2001-21a33vbs.png",
+                "description": "The History department is responsible for updating the History blog channels in our leagues with each season's playoffs, awards, season/all-time records, etc.",
+                "questions": [
+                    "How long have you been in Providence RoSports leagues?",
+                    "Which league do you main? (You can name more than one)",
+                    "Which league interests you the most to work history on?",
+                    "How active do you intend to be?",
+                    "Why do you want to work in history?"
+                ]
+            }
+        }
+    },
+    "1068670713529106432": {
+        "staff_apps_options": {
+            "Referee": {
+                "emoji": "🏁",
+                "logo": "https://static-00.iconduck.com/assets.00/chequered-flag-emoji-465x512-pmjpx1wg.png",
+                "description": "The Referee team is responsible for enforcing the league's rules outside of the Discord server. Dealing with game calls, player reports, and more.",
+                "questions": [
+                    "Why are you interested in joining the Referee team?",
+                    "If you are unsure about if something is a rule, where would you go to find out?",
+                    "If someone asked for an ownership transfer and you don't know if that is allowed or not, what document would you check to find out?",
+                    "If someone challenges a play, would you make a decision on your own or would you wait for others to chime in? How long would you wait?"
+                ]
+            }
+        },
+        "league_apps_options": {
+            "Team Owner": {
+                "emoji": "\ud83c\udfdf\ufe0f",
+                "description": "Apply to be the owner of a team",
+                "questions": [
+                    "Please list any relevant leagues you have owned a team in.",
+                    "Provide an invite to your teamhub (Required)",
+                    "What play format is the league? (Ex: 4v4, 7v7).",
+                    "How would you go about scheduling a game?",
+                    "What command allows you to sign players?",
+                    "What command allows you to submit your score/stats from a game?"
+                ]
+            },
+            "Captain": {
+                "emoji": "\ud83c\udfc8",
+                "description": "Apply to become a QBB captain",
+                "questions": [
+                    "What does a QBB captain do?",
+                    "How many QBBs do you intend to a week roughly?",
+                    "What makes you qualified?",
+                    "Have you been a QBB captain in other related leagues?",
+                    "Do you have any QB accolades that make you eligible for QBB captain?"
+                ]
+            },
+            "Media Center": {
+                "emoji": "\ud83c\udf7f",
+                "description": "Apply for access to media center (Award winners/7,500+ legacy score only)",
+                "questions": [
+                    
+                    "Why do you want to join media center?",
+                    "How active are you?",
+                    "What accolades do you have?"
+                ]
+            },
+            "Media Channel": {
+                "emoji": "\ud83d\udcf8",
+                "description": "Apply for your own media channel",
+                "questions": [
+                    "What would your media channel be called?",
+                    "What would the emoji for your channel be? (No custom emojis)",
+                    "Have you owned a media channel in any other related leagues? If so, list them.",
+                    "Could you describe some segments you have made.",
+                    "Do you make any sort of extra attributes for your medias? (GFX, VFX, videos, etc.)",
+                    "How active are you on a scale of 1-10?"
+                ]
+            }
+        }
+    },
+    "1318677095798411294": {
+        "staff_apps_options": {
+            "Referee": {
+                "emoji": "🏁",
+                "logo": "https://static-00.iconduck.com/assets.00/chequered-flag-emoji-465x512-pmjpx1wg.png",
+                "description": "The Referee team is responsible for enforcing the league's rules outside of the Discord server. Dealing with game calls, player reports, and more.",
+                "questions": [
+                    "Why are you interested in joining the Referee team?",
+                    "If you are unsure about if something is a rule, where would you go to find out?",
+                    "If someone asked for an ownership transfer and you don't know if that is allowed or not, what document would you check to find out?",
+                    "If someone challenges a play, would you make a decision on your own or would you wait for others to chime in? How long would you wait?"
+                ]
+            }
+        },
+        "league_apps_options": {
+            "Team Owner": {
+                "emoji": "\ud83c\udfdf\ufe0f",
+                "description": "Apply to be the owner of a team",
+                "questions": [
+                    "Please list any relevant leagues you have owned a team in.",
+                    "Provide an invite to your teamhub (Required)",
+                    "What play format is the league? (Ex: 4v4, 7v7).",
+                    "How would you go about scheduling a game?",
+                    "What command allows you to sign players?",
+                    "What command allows you to submit your score/stats from a game?"
+                ]
+            },
+            "Captain": {
+                "emoji": "\ud83c\udfc8",
+                "description": "Apply to become a QBB captain",
+                "questions": [
+                    "What does a QBB captain do?",
+                    "How many QBBs do you intend to a week roughly?",
+                    "What makes you qualified?",
+                    "Have you been a QBB captain in other related leagues?",
+                    "Do you have any QB accolades that make you eligible for QBB captain?"
+                ]
+            },
+            "Media Center": {
+                "emoji": "\ud83c\udf7f",
+                "description": "Apply for access to media center (Award winners/7,500+ legacy score only)",
+                "questions": [
+                    
+                    "Why do you want to join media center?",
+                    "How active are you?",
+                    "What accolades do you have?"
+                ]
+            },
+            "Media Channel": {
+                "emoji": "\ud83d\udcf8",
+                "description": "Apply for your own media channel",
+                "questions": [
+                    "What would your media channel be called?",
+                    "What would the emoji for your channel be? (No custom emojis)",
+                    "Have you owned a media channel in any other related leagues? If so, list them.",
+                    "Could you describe some segments you have made.",
+                    "Do you make any sort of extra attributes for your medias? (GFX, VFX, videos, etc.)",
+                    "How active are you on a scale of 1-10?"
+                ]
+            }
+        }
+    },
+    "1240014143784747018": {
+        "staff_apps_options": {
+            "Referee": {
+                "emoji": "🏁",
+                "logo": "https://static-00.iconduck.com/assets.00/chequered-flag-emoji-465x512-pmjpx1wg.png",
+                "description": "The Referee team is responsible for enforcing the league's rules outside of the Discord server. Dealing with game calls, player reports, and more.",
+                "questions": [
+                    "Why are you interested in joining the Referee team?",
+                    "If you are unsure about if something is a rule, where would you go to find out?",
+                    "If someone asked for an ownership transfer and you don't know if that is allowed or not, what document would you check to find out?",
+                    "If someone challenges a play, would you make a decision on your own or would you wait for others to chime in? How long would you wait?",
+                    "What is cherrypicking? Give an example."
+                ]
+            }
+        },
+        "league_apps_options": {
+            "Team Owner": {
+                "emoji": "\ud83c\udfdf\ufe0f",
+                "description": "Apply to be the owner of a team",
+                "questions": [
+                    "Please list any relevant leagues you have owned a team in.",
+                    "Provide an invite to your teamhub (Required)",
+                    "What play format is the league? (Ex: 4v4, 7v7).",
+                    "How would you go about scheduling a game?",
+                    "What command allows you to sign players?",
+                    "What command allows you to submit your score/stats from a game?"
+                ]
+            },
+            "Pickups Host": {
+                "emoji": "\ud83c\udfc0",
+                "description": "Apply to become a pickups host",
+                "questions": [
+                    "What does a pickups host do?",
+                    "How many pickups do you intend to a week roughly?",
+                    "What makes you qualified?",
+                    "Have you been a pickups host in other related leagues?"
+                ]
+            },
+            "Media Center": {
+                "emoji": "\ud83c\udf7f",
+                "description": "Apply for access to media center (Award winners/7,500+ legacy score only)",
+                "questions": [
+                    
+                    "Why do you want to join media center?",
+                    "How active are you?",
+                    "What accolades do you have?"
+                ]
+            },
+            "Media Channel": {
+                "emoji": "\ud83d\udcf8",
+                "description": "Apply for your own media channel",
+                "questions": [
+                    "What would your media channel be called?",
+                    "What would the emoji for your channel be? (No custom emojis)",
+                    "Have you owned a media channel in any other related leagues? If so, list them.",
+                    "Could you describe some segments you have made.",
+                    "Do you make any sort of extra attributes for your medias? (GFX, VFX, videos, etc.)",
+                    "How active are you on a scale of 1-10?"
+                ]
+            }
+        }
+    },
+    "1364650269652025354": {
+        "staff_apps_options": {
+            "Umpire": {
+                "emoji": "🏁",
+                "logo": "https://static-00.iconduck.com/assets.00/chequered-flag-emoji-465x512-pmjpx1wg.png",
+                "description": "The Umpire team is responsible for enforcing the league's rules outside of the Discord server. Dealing with game calls, player reports, and more.",
+                "questions": [
+                    "Why are you interested in joining the Umpire team?",
+                    "If you are unsure about if something is a rule, where would you go to find out?",
+                    "If someone asked for an ownership transfer and you don't know if that is allowed or not, what document would you check to find out?",
+                    "If someone challenges a play, would you make a decision on your own or would you wait for others to chime in? How long would you wait?",
+                    "What is a 'ball' in baseball?",
+                    "What is the definition of a strike in baseball hitting?"
+                ]
+            }
+        },
+        "league_apps_options": {
+            "Team Owner": {
+                "emoji": "\ud83c\udfdf\ufe0f",
+                "description": "Apply to be the owner of a team",
+                "questions": [
+                    "Please list any relevant leagues you have owned a team in.",
+                    "Provide an invite to your teamhub (Required)",
+                    "What play format is the league? (Ex: 4v4, 7v7).",
+                    "How would you go about scheduling a game?",
+                    "What command allows you to sign players?",
+                    "What command allows you to submit your score/stats from a game?"
+                ]
+            },
+            "Pickups Host": {
+                "emoji": "⚾",
+                "description": "Apply to become a pickups host",
+                "questions": [
+                    "What does a pickups host do?",
+                    "How many pickups do you intend to a week roughly?",
+                    "What makes you qualified?",
+                    "Have you been a pickups host in other related leagues?"
+                ]
+            },
+            "Media Center": {
+                "emoji": "\ud83c\udf7f",
+                "description": "Apply for access to media center (Award winners/7,500+ legacy score only)",
+                "questions": [
+                    
+                    "Why do you want to join media center?",
+                    "How active are you?",
+                    "What accolades do you have?"
+                ]
+            },
+            "Media Channel": {
+                "emoji": "\ud83d\udcf8",
+                "description": "Apply for your own media channel",
+                "questions": [
+                    "What would your media channel be called?",
+                    "What would the emoji for your channel be? (No custom emojis)",
+                    "Have you owned a media channel in any other related leagues? If so, list them.",
+                    "Could you describe some segments you have made.",
+                    "Do you make any sort of extra attributes for your medias? (GFX, VFX, videos, etc.)",
+                    "How active are you on a scale of 1-10?"
+                ]
+            }
+        }
+    }
+}
