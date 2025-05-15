@@ -116,41 +116,37 @@ def home():
             })
     return render_template('home.html', user=session.get("user"), league_data=league_data)
 
-@app.route('/pfl')
-def pfl_page():
-    guild_id = "1068670713529106432"
-    settings = load_settings_json("guild_settings").get(guild_id, {})
-    return render_template('pfl.html', user=session.get("user"), settings=settings)
+@app.route("/<league>")
+def dynamic_league_page(league):
+    league_ids = load_settings_json("guild_ids").get("league_ids", [])
+    guild_settings = load_settings_json("guild_settings")
 
-@app.route('/pbl')
-def pbl_page():
-    guild_id = "1240014143784747018"
-    settings = load_settings_json("guild_settings").get(guild_id, {})
-    return render_template('pbl.html', user=session.get("user"), settings=settings)
+    for league_id in league_ids:
+        settings = guild_settings.get(str(league_id))
+        if settings and settings['info']['league_name'].lower() == league:
+            settings["info"]["guild_id"] = league_id
+            return render_template("league.html", user=session.get("user"), settings=settings)
 
-@app.route('/pbul')
-def pbul_page():
-    guild_id = "1364650269652025354"
-    settings = load_settings_json("guild_settings").get(guild_id, {})
-    return render_template('pbul.html', user=session.get("user"), settings=settings)
+
+    return render_template("404.html"), 404
 
 @app.route("/<league>/stats/<section>")
 def unified_league_stats(league, section):
-    guild_map = {
-        "pfl": "1068670713529106432",
-        "pbl": "1240014143784747018",
-        "pbul": "1364650269652025354"
-    }
+    guild_ids = load_settings_json("guild_ids").get("league_ids", [])
+    settings_data = load_settings_json("guild_settings")
 
-    title_map = {
-        "season": "Season Stats",
-        "all_time": "All-Time Stats"
-    }
+    for gid in guild_ids:
+        settings = settings_data.get(str(gid))
+        if settings and settings['info']['league_name'].lower() == league:
+            if section not in ["season", "all_time"]:
+                return "Invalid section", 404
+            title_map = {
+                "season": "Season Stats",
+                "all_time": "All-Time Stats"
+            }
+            return render_league_stats(str(gid), section, title_map[section])
 
-    if league not in guild_map or section not in title_map:
-        return "Invalid league or section", 404
-
-    return render_league_stats(guild_map[league], section, title_map[section])
+    return "Invalid league or section", 404
 
 @app.route("/login")
 def login():
@@ -209,6 +205,10 @@ def datetimeformat(value):
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404
+
+@app.route("/images/<path:filename>")
+def serve_images(filename):
+    return send_from_directory(os.path.join(app.root_path, "images"), filename)
 
 if __name__ == "__main__":
     app.run(debug=True)

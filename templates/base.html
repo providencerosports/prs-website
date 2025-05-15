@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{% block title %}Providence RoSports{% endblock %}</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-  <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/misc_icons/prs_favicon.png') }}" />
+  <link rel="icon" type="image/png" href="/images/misc_icons/prs_favicon.png" />
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3671282640861471"
      crossorigin="anonymous"></script>
 {% block head %}{% endblock %}
@@ -50,11 +50,11 @@
         </button>
         <div class="dropdown-content user-dropdown-content">
           <a href="/profile" class="dropdown-item prs_color" style="padding-left: 1.25rem;">
-            <img src="{{ url_for('static', filename='images/misc_icons/my_profile.png') }}" alt="Profile Icon" style="height: 1em; width: auto; margin-right: 0.4em; vertical-align: middle; display: inline-block;">
+            <img src="/images/misc_icons/my_profile.png" alt="Profile Icon" style="height: 1em; width: auto; margin-right: 0.4em; vertical-align: middle; display: inline-block;">
             My Profile
           </a>
           <a href="/logout" class="dropdown-item text-red" style="color: red; padding-left: 1.25rem;">
-            <img src="{{ url_for('static', filename='images/misc_icons/log_out.png') }}" alt="Logout Icon" style="height: 1em; width: auto; margin-right: 0.4em; vertical-align: middle; display: inline-block;">
+            <img src="/images/misc_icons/log_out.png" alt="Logout Icon" style="height: 1em; width: auto; margin-right: 0.4em; vertical-align: middle; display: inline-block;">
             Log out
           </a>
         </div>

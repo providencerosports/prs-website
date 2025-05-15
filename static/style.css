@@ -3,16 +3,16 @@
 :root {
   --prs-color: #CEC188;
 
-  --prs-icon: url("/static/images/misc_icons/prs.png");
-  --prs-favicon: url("/static/images/misc_icons/prs_favicon.png");
-  --pfl-icon: url("images/league_icons/pfl.png");
-  --pbl-icon: url("images/league_icons/pbl.png");
-  --pbul-icon: url("images/league_icons/pbul.png");
+  --prs-icon: url("/images/misc_icons/prs.png");
+  --prs-favicon: url("/images/misc_icons/prs_favicon.png");
+  --pfl-icon: url("/images/league_icons/pfl.png");
+  --pbl-icon: url("/images/league_icons/pbl.png");
+  --pbul-icon: url("/images/league_icons/pbul.png");
 
-  --discord-icon: url("images/social_icons/discord.png");
-  --roblox-icon: url("images/social_icons/roblox.png");
-  --youtube-icon: url("images/social_icons/youtube.png");
-  --tiktok-icon: url("images/social_icons/tiktok.png");
+  --discord-icon: url("/images/social_icons/discord.png");
+  --roblox-icon: url("/images/social_icons/roblox.png");
+  --youtube-icon: url("/images/social_icons/youtube.png");
+  --tiktok-icon: url("/images/social_icons/tiktok.png");
 
 }
 
