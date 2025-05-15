@@ -2,7 +2,7 @@
     "656863051802476548": {
         "info": {
             "league_name": "Providence RoSports",
-            "league_color": "D0C385",
+            "league_color": "#D0C385",
             "league_emoji": "<:prs:1363223714878984222>",
             "league_logo": "https://cdn.discordapp.com/emojis/1363223714878984222.png",
             "roblox_group_url": "https://www.roblox.com/groups/32825741/Providence-RoSports#!/about",
@@ -10,7 +10,8 @@
             "roblox_verify_bot_id": 426537812993638400,
             "discord_verify_bot_id": 703886990948565003,
             "verification_url": "https://blox.link/dashboard/verifications",
-            "support_server_invite": "https://discord.gg/providencerosports"
+            "support_server_invite": "https://discord.gg/providencerosports",
+            "website_url": "https://providencerosports.com"
         },
         "socials": {
             "youtube_url": "https://www.youtube.com/@ProvidenceRoSports/featured",
@@ -58,7 +59,7 @@
         "info": {
             "league_name": "PFL",
             "league_full_name": "Providence Football League",
-            "league_color": "EDC96B",
+            "league_color": "#EDC96B",
             "league_emoji": "<:pfl:1363224055100080401>",
             "league_logo": "https://cdn.discordapp.com/emojis/1363224055100080401.png",
             "league_invite": "https://discord.gg/pfl",
@@ -195,7 +196,7 @@
         "info": {
             "league_name": "PUFL",
             "league_full_name": "Providence Universe Football League",
-            "league_color": "0080FF",
+            "league_color": "#0080FF",
             "league_emoji": "<:pufl:1318686636078534797>",
             "league_logo": "https://cdn.discordapp.com/emojis/1318686636078534797.png",
             "league_invite": "https://discord.gg/gD7WQ6KPhv",
@@ -330,7 +331,7 @@
         "info": {
             "league_name": "PBL",
             "league_full_name": "Providence Basketball League",
-            "league_color": "ee652f",
+            "league_color": "#ee652f",
             "league_emoji": "<:pbl:1363223711527731411>",
             "league_logo": "https://cdn.discordapp.com/emojis/1363223711527731411.png",
             "league_invite": "https://discord.gg/provbl",
@@ -466,7 +467,7 @@
         "info": {
             "league_name": "PBUL",
             "league_full_name": "Providence Baseball Universe League",
-            "league_color": "0094d1",
+            "league_color": "#0094d1",
             "league_emoji": "<:pbul:1364657947594068018>",
             "league_logo": "https://cdn.discordapp.com/emojis/1364657947594068018.png",
             "league_invite": "https://discord.gg/pbul",
