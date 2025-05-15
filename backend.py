@@ -111,7 +111,7 @@ def home():
                 "url": f"/{settings['info']['league_name'].lower()}",
                 "name": settings['info']['league_name'],
                 "game_name": settings['info']['game_name'],
-                "color": f"#{settings['info']['league_color']}",
+                "color": f"{settings['info']['league_color']}",
                 "cover": settings['info']['game_cover']
             })
     return render_template('home.html', user=session.get("user"), league_data=league_data)
