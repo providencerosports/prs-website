@@ -4,13 +4,13 @@
 
 <style>
   .widget-box p {
-    color: {{ settings.info.league_color }};
+    color: #{{ settings.info.league_color }};
   }
 
   .join-now-btn {
     background-color: transparent;
-    color: {{ settings.info.league_color }};
-    border: 2px solid {{ settings.info.league_color }};
+    color: #{{ settings.info.league_color }};
+    border: 2px solid #{{ settings.info.league_color }};
 
     font-weight: bold;
     padding: 0.75rem 1.5rem;
@@ -22,14 +22,14 @@
   }
 
   .join-now-btn:hover {
-    background-color: {{ settings.info.league_color }};
+    background-color: #{{ settings.info.league_color }};
     color: #000;
   }
 
   .league-tool-link {
     background-color: transparent;
-    color: {{ settings.info.league_color }};
-    border: 2px solid {{ settings.info.league_color }};
+    color: #{{ settings.info.league_color }};
+    border: 2px solid #{{ settings.info.league_color }};
 
     font-weight: bold;
     text-align: center;
@@ -40,7 +40,7 @@
   }
 
   .league-tool-link:hover {
-    background-color: {{ settings.info.league_color }};
+    background-color: #{{ settings.info.league_color }};
     color: #000;
   }
 
@@ -141,7 +141,7 @@
 
 
 <main class="hero-section fade-in">
-  <h1 class="hero-title" style="color: {{ settings.info.league_color }};">{{ settings.info.league_full_name }}</h1>
+  <h1 class="hero-title" style="color: #{{ settings.info.league_color }};">{{ settings.info.league_full_name }}</h1>
   <p class="hero-subtitle">
     <a href="{{ settings.info.game_link }}" target="_blank" style="color: #4da6ff; text-decoration: underline;">
       {{ settings.info.game_name }}
@@ -165,7 +165,7 @@
 
 
 <div class="widget-box">
-  <h2 style="color: {{ settings.info.league_color }};">League Tools</h2>
+  <h2 style="color: #{{ settings.info.league_color }};">League Tools</h2>
   <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 0.75rem;">
     <a href="/{{ settings.info.league_name | lower }}/stats/season" class="league-tool-link">Player Statistics</a>
   </div>
@@ -176,7 +176,7 @@
       
 
       <div class="widget-box">
-    <h2 style="color: {{ settings.info.league_color }};">What is {{ settings.info.league_name }}?</h2>
+    <h2 style="color: #{{ settings.info.league_color }};">What is {{ settings.info.league_name }}?</h2>
     <p>
       Providence Football League is our first and most iconic league, based in the game Football Fusion 2.
       PFL was founded in January 2023 by mrtmj. By June, sir_spang and mrtmj were running the league.
