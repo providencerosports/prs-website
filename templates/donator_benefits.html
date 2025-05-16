@@ -1,0 +1,171 @@
+{% extends "base.html" %}
+{% block title %}{{ settings.info.league_name }} Donator Benefits - Providence RoSports{% endblock %}
+{% block content %}
+
+<style>
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('{{ settings.info.game_cover }}');
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.90);
+    z-index: -1;
+  }
+</style>
+
+
+<style>
+  .benefits-container {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+  }
+
+  .dropdown-wrapper {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .donator-toggle {
+    background-color: #1E1E1E;
+    border: 2px solid;
+    cursor: pointer;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: border-radius 0.3s ease, background-color 0.3s ease;
+  }
+
+  .donator-toggle img {
+    height: 1.5rem;
+    width: auto;
+    object-fit: contain;
+    margin-right: 0.75rem;
+    vertical-align: middle;
+
+    height: auto;
+    width: auto;
+    max-height: 1.5rem;
+    max-width: 1.5rem;
+
+    width: 1.7rem;
+    height: 1.7rem;
+    margin-right: 0.75rem;
+    vertical-align: middle;
+  }
+
+  .donator-toggle::after {
+    content: "\25BC";
+    position: absolute;
+    right: 1.5rem;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+  }
+
+  .donator-toggle.active::after {
+    transform: rotate(180deg);
+  }
+
+  .donator-toggle.active {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .benefit-list {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transform: scaleY(0.95);
+    transform-origin: top;
+    transition: opacity 0.6s ease, max-height 0.6s ease, transform 0.6s ease;
+    background-color: #111;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    border-radius: 0 0 10px 10px;
+    padding: 0 1.5rem;
+  }
+
+  .benefit-list.open {
+    opacity: 1;
+    max-height: 2000px;
+    transform: scaleY(1);
+    padding: 1.5rem;
+  }
+
+  .benefit {
+    margin-bottom: 1.25rem;
+  }
+
+  .benefit-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .benefit-desc {
+    font-size: 0.95rem;
+  }
+</style>
+
+<main class="hero-section fade-in">
+  <h1 class="hero-title" style="color: {{ settings.info.league_color }}; text-align: center;">
+  {{ settings.info.league_full_name }}<br><span style="font-size: 1.2rem;">Donator Benefits</span>
+</h1>
+</main>
+
+<div class="benefits-container fade-in-delayed">
+  {% for level, perks in combined_perks.items() %}
+    {% set level_name = "Donator Level " ~ level[-1:] %}
+    {% set level_color = "#9cf4fa" if level == "donator1" else "#e3eb5f" if level == "donator2" else "#c75efd" %}
+    <div class="dropdown-wrapper">
+      <button class="donator-toggle" style="border-color: {{ level_color }}; color: {{ level_color }};">
+        <img src="/images/benefits_icons/{{ level }}.png"> {{ level_name }}
+      </button>
+      <div class="benefit-list" style="border-color: {{ level_color }};">
+        {% for title, benefit in perks.items() %}
+          <div class="benefit">
+            <div class="benefit-title" style="color: {{ level_color }};">{{ benefit.icon }} {{ title }}</div>
+            <div class="benefit-desc" style="color: {{ level_color }};">{{ benefit.description }}</div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const toggles = document.querySelectorAll(".donator-toggle");
+    toggles.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        btn.classList.toggle("active");
+        const content = document.querySelectorAll(".benefit-list")[i];
+        content.classList.toggle("open");
+      });
+    });
+  });
+</script>
+
+{% endblock %}

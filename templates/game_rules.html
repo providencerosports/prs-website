@@ -1,0 +1,147 @@
+{% extends "base.html" %}
+{% block title %}{{ settings.info.league_name }} Game Rules - Providence RoSports{% endblock %}
+{% block content %}
+
+<style>
+  .rules-container {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+  }
+
+  .dropdown-wrapper {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .collapsible {
+    background-color: #1E1E1E;
+    color: {{ settings.info.league_color }};
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    width: 100%;
+    border: 2px solid {{ settings.info.league_color }};
+    border-radius: 10px;
+    text-align: left;
+    outline: none;
+    font-size: 1.3rem;
+    position: relative;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+    display: block;
+  }
+
+  .collapsible::after {
+    content: "\25BC";
+    position: absolute;
+    right: 1.5rem;
+    font-size: 1.2rem;
+    transition: transform 0.7s ease;
+  }
+
+  .collapsible.active {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .collapsible.active::after {
+    transform: rotate(180deg);
+  }
+
+  .content {
+    opacity: 0;
+    max-height: 0; overflow: hidden; transform: scaleY(0.95); transform-origin: top;
+    overflow: hidden;
+    transition: max-height 0.6s ease, opacity 0.6s ease, transform 0.6s ease;
+    background-color: #111;
+    border-left: 2px solid {{ settings.info.league_color }};
+    border-right: 2px solid {{ settings.info.league_color }};
+    border-bottom: 2px solid {{ settings.info.league_color }};
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+  }
+
+  .content.open {
+  transform: scaleY(1);
+    opacity: 1;
+    max-height: 1000px;
+  }
+
+  .rule {
+    padding: 0.75rem 1rem;
+    color: #f0f0f0;
+    font-size: 1rem;
+  }
+
+  .rule strong {
+    font-weight: bold;
+    color: {{ settings.info.league_color }};
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('{{ settings.info.game_cover }}');
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.90);
+    z-index: -1;
+  }
+</style>
+
+<main class="hero-section fade-in">
+  <h1 class="hero-title" style="color: {{ settings.info.league_color }};">
+    {{ settings.info.league_name }} Game Rules
+  </h1>
+</main>
+
+<div class="rules-container fade-in-delayed">
+  {% for title, rules in sections %}
+    <div class="dropdown-wrapper">
+      <button class="collapsible"><strong>{{ title }}</strong></button>
+      <div class="content">
+        {% for rule in rules %}
+          <div class="rule"><strong>{{ rule.split(":")[0] }}:</strong> {{ rule.split(":", 1)[1] }}</div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggles = document.querySelectorAll(".collapsible");
+
+    toggles.forEach((toggle) => {
+      const content = toggle.nextElementSibling;
+
+      toggle.addEventListener("click", () => {
+        toggle.classList.toggle("active");
+        content.classList.toggle("open");
+
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    });
+  });
+</script>
+
+
+{% endblock %}

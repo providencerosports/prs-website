@@ -7,6 +7,30 @@
 {% block head %}
 
 <style>
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('{{ settings.info.game_cover }}');
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.90);
+    z-index: -1;
+  }
+
   .category-tab {
     background-color: transparent;
     border: 2px solid {{ settings.info.league_color }};
@@ -62,13 +86,17 @@
   }
 
   .stats-widget {
-    background-color: #1E1E1E;
+    background-color: rgba(30, 30, 30, 0.9);
     border: 2px solid {{ settings.info.league_color }};
     border-radius: 12px;
     padding: 1.5rem;
     margin-bottom: 2rem;
   }
 
+
+  .stats-table {
+    background-color: rgba(30, 30, 30, 0.9);
+  }
 </style>
 
 {% endblock %}
@@ -76,7 +104,14 @@
 {% block content %}
 <div class="stats-color-scope" style="color: {{ settings.info.league_color }}">
 <div class="stats-widget">
-    <h1 class="stats-heading" style="color: {{ settings.info.league_color }}">{{ settings.info.league_name }} {{ title }}</h1>
+    
+<h1 class="stats-heading" style="color: {{ settings.info.league_color }}; text-align: center;">
+  {{ settings.info.league_full_name }}<br>
+  <span style="font-size: 1.2rem;">
+    {% if section == 'all_time' %}All-Time Stats{% else %}Season Stats{% endif %}
+  </span>
+</h1>
+
 <p style="text-align: center; font-size: 0.9rem; color: {{ settings.info.league_color }}; margin-bottom: 1.5rem;">
     <em>Updated {{ minutes_since_last_hour }} minutes ago</em>
 </p>
@@ -112,7 +147,31 @@ function switchSection(section) {
 
 <div class="category-tabs">
         {% for category in categories %}
-<style>.tab-button { color: {{ settings.info.league_color }} !important; }</style>
+<style>
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('{{ settings.info.game_cover }}');
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.90);
+    z-index: -1;
+  }
+.tab-button { color: {{ settings.info.league_color }} !important; }</style>
             <button class="category-tab {% if category == selected_category %}active{% endif %}" 
                     onclick="changeCategory('{{ category }}')">
                 {{ category }}

@@ -148,6 +148,45 @@ def unified_league_stats(league, section):
 
     return "Invalid league or section", 404
 
+@app.route("/<league>/game_rules")
+def game_rules_page(league):
+    guild_ids = load_settings_json("guild_ids").get("league_ids", [])
+    guild_settings = load_settings_json("guild_settings")
+    game_rules_data = load_settings_json("game_rules")
+
+    for gid in guild_ids:
+        settings = guild_settings.get(str(gid))
+        if settings and settings['info']['league_name'].lower() == league:
+            rules = game_rules_data.get(str(gid), {})
+            parsed_sections = []
+            for i, (section_key, section_data) in enumerate(rules.items(), start=1):
+                section_title = section_key.replace("_", " ").title()
+                section_rules = [
+                    f"{i}.{str(j+1).zfill(2)}: {rule}"
+                    for j, rule in enumerate(section_data['rules'])
+                ]
+                parsed_sections.append((section_title, section_rules))
+            return render_template("game_rules.html", settings=settings, sections=parsed_sections)
+    return render_template("404.html"), 404
+
+@app.route("/<league>/donator_benefits")
+def benefits_perks_page(league):
+    guild_ids = load_settings_json("guild_ids").get("league_ids", [])
+    guild_settings = load_settings_json("guild_settings")
+    all_perks = load_settings_json("benefits_perks")
+
+    for guild_id in guild_ids:
+        settings = guild_settings.get(str(guild_id))
+        if settings and settings["info"]["league_name"].lower() == league:
+            perks = all_perks.get(str(guild_id), {})
+            default_perks = perks.get("default", {})
+            combined_perks = {}
+            for level in ("donator1", "donator2", "donator3"):
+                combined_perks[level] = dict(perks.get(level, {}))
+                combined_perks[level].update(default_perks)
+            return render_template("donator_benefits.html", settings=settings, combined_perks=combined_perks)
+    return render_template("404.html"), 404
+
 @app.route("/login")
 def login():
     return redirect(
