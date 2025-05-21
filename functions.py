@@ -63,16 +63,23 @@ def render_league_stats(guild_id: str, section: str, title: str):
         main_db_conn = sqlite3.connect("main_database.db")
         main_db_cursor = main_db_conn.cursor()
 
-        main_db_cursor.execute("""
-            SELECT stat_category
-            FROM stats_database
-            WHERE guild_id = ? AND section = ?
-            GROUP BY stat_category
-            ORDER BY MIN(category_order_index) ASC
-        """, (guild_id, section))
-        categories = [row[0] for row in main_db_cursor.fetchall()]
+        def fetch_categories(sec):
+            main_db_cursor.execute("""
+                SELECT stat_category
+                FROM stats_database
+                WHERE guild_id = ? AND section = ?
+                GROUP BY stat_category
+                ORDER BY MIN(category_order_index) ASC
+            """, (guild_id, sec))
+            return [row[0] for row in main_db_cursor.fetchall()]
+
+        categories = fetch_categories(section)
         if not categories:
-            return "No stats available."
+            section = "all_time"
+            categories = fetch_categories(section)
+            if not categories:
+                main_db_conn.close()
+                return "No stats available."
 
         selected_category = request.args.get("category") or categories[0]
         sort_by = request.args.get("sort")
