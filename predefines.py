@@ -11,7 +11,7 @@ gc = gspread.authorize(credentials)
 def load_settings_json(name):
     path = os.path.join("settings", f"{name}.json")
     try:
-        with open(path, 'r') as f:
+        with open(path, 'r', encoding="utf-8") as f:
             return json.load(f)
     except (FileNotFoundError, json.decoder.JSONDecodeError):
         return {}

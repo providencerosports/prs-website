@@ -47,7 +47,8 @@ body, button, a {
   display: flex;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #1e1e1e;
+  background-color: rgba(30, 30, 30, 0.75);
+  backdrop-filter: blur(6px);
   border-bottom: 2px solid #333;
 }
 
@@ -446,7 +447,8 @@ body, button, a {
 
 /* Footer */
 .footer {
-  background-color: #1e1e1e;
+  background-color: rgba(30, 30, 30, 0.75);
+  backdrop-filter: blur(6px);
   padding: 1rem;
   text-align: center;
   color: #ccc;
@@ -697,7 +699,7 @@ body, button, a {
 
 /* Social link text colors */
 .social-option.discord {
-  color: #5865F2;
+  color: #5F70BE;
 }
 
 .social-option.roblox {

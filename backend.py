@@ -2,6 +2,8 @@ from imports import *
 from predefines import *
 from functions import *
 
+prs_guild_id = 656863051802476548
+
 def download_file(service, file_id, dest_path):
     temp_path = dest_path + ".tmp"
     request = service.files().get_media(fileId=file_id)
@@ -116,6 +118,10 @@ def home():
             })
     return render_template('home.html', user=session.get("user"), league_data=league_data)
 
+@app.route("/ads.txt")
+def serve_ads_txt():
+    return send_from_directory(os.path.join(app.root_path), "ads.txt")
+
 @app.route("/<league>")
 def dynamic_league_page(league):
     league_ids = load_settings_json("guild_ids").get("league_ids", [])
@@ -167,6 +173,23 @@ def game_rules_page(league):
                 ]
                 parsed_sections.append((section_title, section_rules))
             return render_template("game_rules.html", settings=settings, sections=parsed_sections)
+    return render_template("404.html"), 404
+
+@app.route("/rosports_standards")
+def rosports_standards_page():
+    guild_settings = load_settings_json("guild_settings").get(str(prs_guild_id))
+    rosports_standards = load_settings_json("rosports_standards")
+
+    if rosports_standards:
+        parsed_sections = []
+        for i, (section_key, section_data) in enumerate(rosports_standards.items(), start=1):
+            section_title = section_key.replace("_", " ").title()
+            section_rules = [
+                f"{i}.{str(j+1).zfill(2)}: {rule}"
+                for j, rule in enumerate(section_data['rules'])
+            ]
+            parsed_sections.append((section_title, section_rules))
+        return render_template("rosports_standards.html", settings=guild_settings, sections=parsed_sections)
     return render_template("404.html"), 404
 
 @app.route("/<league>/donator_benefits")
