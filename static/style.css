@@ -44,6 +44,8 @@ body, button, a {
 
 /* Navbar */
 .navbar {
+  position: relative;
+  z-index: 10;
   display: flex;
   align-items: center;
   padding: 1rem 2rem;
@@ -134,8 +136,10 @@ body, button, a {
 }
 
 .dropdown-content {
+  z-index: 1000;
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;
   position: absolute;
   top: 100%;
   left: 0;
@@ -150,8 +154,10 @@ body, button, a {
 }
 
 .dropdown:hover .dropdown-content {
+  z-index: 1000;
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
   transform: translateY(0);
 }
 
@@ -758,6 +764,8 @@ body, button, a {
 /* Responsive tweaks for mobile */
 @media (max-width: 768px) {
   .navbar {
+  position: relative;
+  z-index: 10;
     flex-wrap: wrap;
     padding: 1rem;
   }

@@ -22,6 +22,7 @@ import io
 import sqlite3
 from datetime import datetime
 import base64
+import traceback
 
 
 from dotenv import load_dotenv

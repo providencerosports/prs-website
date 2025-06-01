@@ -84,11 +84,21 @@ def start_auto_sync():
 
     def loop():
         while True:
-            now = datetime.utcnow()
-            seconds_until_next_hour = ((60 - now.minute - 1) * 60) + (60 - now.second)
-            print(f"[SYNC] Waiting {seconds_until_next_hour} seconds until the next full hour...")
-            time.sleep(seconds_until_next_hour)
-            sync_from_drive()
+            try:
+                now = datetime.utcnow()
+                seconds_until_next_hour = ((60 - now.minute - 1) * 60) + (60 - now.second)
+                print(f"[SYNC] Waiting {seconds_until_next_hour} seconds until the next full hour...")
+                time.sleep(seconds_until_next_hour)
+
+                print("[SYNC] Attempting sync...")
+                sync_from_drive()
+
+            except Exception as e:
+                print(f"[SYNC ERROR] {e}")
+                traceback.print_exc()
+                time.sleep(300)  # Wait 5 min before retrying to avoid a tight error loop
+
+    threading.Thread(target=loop, daemon=True).start()
 
     threading.Thread(target=loop, daemon=True).start()
 
