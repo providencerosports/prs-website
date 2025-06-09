@@ -164,7 +164,7 @@ def unified_league_stats(league, section):
 
     return "Invalid league or section", 404
 
-@app.route("/<league>/game_rules")
+@app.route("/<league>/league_regulations")
 def game_rules_page(league):
     guild_ids = load_settings_json("guild_ids").get("league_ids", [])
     guild_settings = load_settings_json("guild_settings")
@@ -182,7 +182,7 @@ def game_rules_page(league):
                     for j, rule in enumerate(section_data['rules'])
                 ]
                 parsed_sections.append((section_title, section_rules))
-            return render_template("game_rules.html", settings=settings, sections=parsed_sections)
+            return render_template("league_regulations.html", settings=settings, sections=parsed_sections)
     return render_template("404.html"), 404
 
 @app.route("/rosports_standards")
