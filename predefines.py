@@ -15,3 +15,11 @@ def load_settings_json(name):
             return json.load(f)
     except (FileNotFoundError, json.decoder.JSONDecodeError):
         return {}
+
+def load_database_json(name):
+    path = os.path.join("databases", f"{name}.json")
+    try:
+        with open(path, 'r', encoding="utf-8") as f:
+            return json.load(f)
+    except (FileNotFoundError, json.decoder.JSONDecodeError):
+        return {}

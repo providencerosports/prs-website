@@ -185,6 +185,66 @@ def game_rules_page(league):
             return render_template("league_regulations.html", settings=settings, sections=parsed_sections)
     return render_template("404.html"), 404
 
+@app.route("/<league>/standings")
+def league_standings_page(league):
+    guild_ids = load_settings_json("guild_ids").get("league_ids", [])
+    settings_data = load_settings_json("guild_settings")
+    standings_data = load_database_json("standings_database")
+    league_status = load_settings_json("league_status")
+    team_data = load_database_json("team_database")
+
+    for gid in guild_ids:
+        settings = settings_data.get(str(gid))
+        if settings and settings['info']['league_name'].lower() == league:
+            settings["info"]["guild_id"] = gid
+
+            current_series = league_status.get(str(gid), {}).get("series", 0)
+
+            labels = {
+                "season": "Season",
+                "series1": "Series 1",
+                "series2": "Series 2",
+                "series3": "Series 3",
+                "series4": "Series 4",
+                "series5": "Playoffs"
+            }
+
+            filtered_labels = {}
+            for key, label in labels.items():
+                if key == "season":
+                    filtered_labels[key] = label
+                elif key.startswith("series"):
+                    number = key[6:]
+                    if number.isdigit() and int(number) <= current_series:
+                        filtered_labels[key] = label
+
+            standings_sections = []
+            for section_key, label in filtered_labels.items():
+                rows = []
+                for team_name, team_data in standings_data.get(str(gid), {}).items():
+                    section = team_data.get(section_key)
+                    if section:
+                        rows.append([
+                            team_name,
+                            section.get("division", "-"),
+                            section.get("rank", "-"),
+                            section.get("seed", "-"),
+                            section.get("wins", 0),
+                            section.get("losses", 0),
+                            section.get("points", 0)
+                        ])
+                if rows:
+                    rows.sort(key=lambda x: (int(x[2]) if str(x[2]).isdigit() else 999))
+                    standings_sections.append({
+                        "label": label,
+                        "headers": ["Team", "Division", "Rank", "Seed", "Wins", "Losses", "Points"],
+                        "rows": rows
+                    })
+
+            return render_template("standings.html", settings=settings, user=session.get("user"), standings_sections=standings_sections)
+
+    return render_template("404.html"), 404
+
 @app.route("/rosports_standards")
 def rosports_standards_page():
     guild_settings = load_settings_json("guild_settings").get(str(prs_guild_id))
