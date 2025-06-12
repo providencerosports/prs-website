@@ -28,7 +28,7 @@
 
   .standings-table {
     width: 100%;
-    table-layout: fixed;
+    min-width: 800px;
     border-collapse: collapse;
     background-color: rgba(30, 30, 30, 0.9);
     border: 1px solid {{ settings.info.league_color }};
@@ -90,16 +90,19 @@
     padding: 0.5rem 1rem;
     margin: 0 0.25rem 0.5rem;
     border-radius: 10px;
-    cursor: pointer;
     font-weight: bold;
+    cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
-
 
   .filter-button:hover,
   .filter-button.active {
     background-color: {{ settings.info.league_color }};
     color: #000;
+  }
+
+  .stats-table-wrapper {
+    overflow-x: auto;
   }
 </style>
 {% endblock %}
@@ -121,7 +124,7 @@
     {% for section in standings_sections %}
     <div class="standings-section{% if loop.first %} active{% endif %}" id="section-{{ loop.index0 }}">
       <h2>{{ section.label }}</h2>
-      <div class="stats-table-wrapper" style="overflow-x: auto;">
+      <div class="stats-table-wrapper">
         <table class="standings-table">
           <thead>
             <tr>
