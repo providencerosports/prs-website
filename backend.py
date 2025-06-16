@@ -238,7 +238,7 @@ def league_standings_page(league):
                     rows.sort(key=lambda x: (int(x[2]) if str(x[2]).isdigit() else 999))
                     standings_sections.append({
                         "label": label,
-                        "headers": ["Team", "Division", "Rank", "Seed", "Wins", "Losses", "Points", "PD"],
+                        "headers": ["Team", "Division", "Rank", "Seed", "Wins", "Losses", "PD", "Points"],
                         "rows": rows
                     })
 
