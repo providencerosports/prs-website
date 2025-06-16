@@ -28,7 +28,7 @@
 
   .standings-table {
     width: 100%;
-    min-width: 800px;
+    min-width: 900px;
     border-collapse: collapse;
     background-color: rgba(30, 30, 30, 0.9);
     border: 1px solid {{ settings.info.league_color }};
@@ -126,10 +126,14 @@
       <h2>{{ section.label }}</h2>
       <div class="stats-table-wrapper">
         <table class="standings-table">
-          <thead>
+          <thead style="background-color: #2a2a2a;">
             <tr>
               {% for header in section.headers %}
-              <th>{{ header }}</th>
+              <th style="color: {{ settings.info.league_color }}; font-weight: bold;
+                        {% if loop.first %}border-top-left-radius: 12px;{% endif %}
+                        {% if loop.last %}border-top-right-radius: 12px;{% endif %}">
+                {{ header }}
+              </th>
               {% endfor %}
             </tr>
           </thead>
