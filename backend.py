@@ -231,8 +231,8 @@ def league_standings_page(league):
                             section.get("seed", "-"),
                             section.get("wins", 0),
                             section.get("losses", 0),
-                            section.get("points", 0),
-                            section.get("pd", 0)
+                            section.get("pd", 0),
+                            section.get("points", 0)
                         ])
                 if rows:
                     rows.sort(key=lambda x: (int(x[2]) if str(x[2]).isdigit() else 999))
